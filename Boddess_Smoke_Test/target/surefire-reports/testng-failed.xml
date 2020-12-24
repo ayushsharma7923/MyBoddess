@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Homepage(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="Header_Links"/>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

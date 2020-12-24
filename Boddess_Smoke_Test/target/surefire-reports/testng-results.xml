@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1622" started-at="2020-12-24T05:45:51Z" finished-at="2020-12-24T05:45:52Z">
+    <groups>
+    </groups>
+    <test name="Homepage" duration-ms="1622" started-at="2020-12-24T05:45:51Z" finished-at="2020-12-24T05:45:52Z">
+      <class name="com.boddess.testscript.Homepage">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="report" is-config="true" duration-ms="18466" started-at="2020-12-24T11:15:32Z" finished-at="2020-12-24T11:15:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="Header_Links" duration-ms="1598" started-at="2020-12-24T11:15:51Z" description="Homepage&gt;&gt; Test Case No.1&gt;&gt; Verify Boddess logo on Homepage" finished-at="2020-12-24T11:15:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header_Links -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="getResult" is-config="true" duration-ms="9" started-at="2020-12-24T11:15:52Z" finished-at="2020-12-24T11:15:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Header_Links status=SUCCESS method=Homepage.Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@2d209079] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="endReport" is-config="true" duration-ms="1218" started-at="2020-12-24T11:15:52Z" finished-at="2020-12-24T11:15:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.boddess.testscript.Homepage -->
+    </test> <!-- Homepage -->
+  </suite> <!-- Suite -->
+</testng-results>
