@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1622" started-at="2020-12-24T05:45:51Z" finished-at="2020-12-24T05:45:52Z">
+  <suite name="Suite" duration-ms="19943" started-at="2021-02-09T13:00:27Z" finished-at="2021-02-09T13:00:47Z">
     <groups>
     </groups>
-    <test name="Homepage" duration-ms="1622" started-at="2020-12-24T05:45:51Z" finished-at="2020-12-24T05:45:52Z">
+    <test name="Homepage" duration-ms="3951" started-at="2021-02-09T13:00:27Z" finished-at="2021-02-09T13:00:31Z">
       <class name="com.boddess.testscript.Homepage">
-        <test-method status="PASS" signature="report()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="report" is-config="true" duration-ms="18466" started-at="2020-12-24T11:15:32Z" finished-at="2020-12-24T11:15:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="Header_Links" duration-ms="1598" started-at="2020-12-24T11:15:51Z" description="Homepage&gt;&gt; Test Case No.1&gt;&gt; Verify Boddess logo on Homepage" finished-at="2020-12-24T11:15:52Z">
+        <test-method status="PASS" signature="Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="Header_Links" duration-ms="2513" started-at="2021-02-09T18:30:27Z" description="Homepage&gt;&gt; Test Case No.1&gt;&gt; Verify Boddess logo on Homepage" finished-at="2021-02-09T18:30:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Header_Links -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="getResult" is-config="true" duration-ms="9" started-at="2020-12-24T11:15:52Z" finished-at="2020-12-24T11:15:52Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="getResult" is-config="true" duration-ms="28" started-at="2021-02-09T18:30:30Z" finished-at="2021-02-09T18:30:30Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +22,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="endReport" is-config="true" duration-ms="1218" started-at="2020-12-24T11:15:52Z" finished-at="2020-12-24T11:15:54Z">
+        <test-method status="PASS" signature="Header_Links1()[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="Header_Links1" duration-ms="1376" started-at="2021-02-09T18:30:30Z" description="Homepage&gt;&gt;Test Case No.2&gt;&gt; Verify Boddess categories on Homepage" finished-at="2021-02-09T18:30:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Header_Links1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@2d209079]" name="getResult" is-config="true" duration-ms="1" started-at="2021-02-09T18:30:31Z" finished-at="2021-02-09T18:30:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Header_Links1 status=SUCCESS method=Homepage.Header_Links1()[pri:0, instance:com.boddess.testscript.Homepage@2d209079] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.boddess.testscript.Homepage -->
+    </test> <!-- Homepage -->
+    <test name="Login_Reg" duration-ms="15592" started-at="2021-02-09T13:00:32Z" finished-at="2021-02-09T13:00:47Z">
+      <class name="com.boddess.testscript.Login_Reg">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.boddess.testscript.Login_Reg@7a0ac6e3]" name="report" is-config="true" duration-ms="42028" started-at="2021-02-09T18:29:45Z" finished-at="2021-02-09T18:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.boddess.testscript.Login_Reg@7a0ac6e3]" name="Login" duration-ms="15586" started-at="2021-02-09T18:30:32Z" description="Login and Reg&gt;&gt; Verify user is able to login" finished-at="2021-02-09T18:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Login_Reg@7a0ac6e3]" name="getResult" is-config="true" duration-ms="2" started-at="2021-02-09T18:30:47Z" finished-at="2021-02-09T18:30:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Login_Reg.Login()[pri:0, instance:com.boddess.testscript.Login_Reg@7a0ac6e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.boddess.testscript.Login_Reg@7a0ac6e3]" name="endReport" is-config="true" duration-ms="4215" started-at="2021-02-09T18:30:47Z" finished-at="2021-02-09T18:30:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.boddess.testscript.Homepage -->
-    </test> <!-- Homepage -->
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+    </test> <!-- Login_Reg -->
   </suite> <!-- Suite -->
 </testng-results>
