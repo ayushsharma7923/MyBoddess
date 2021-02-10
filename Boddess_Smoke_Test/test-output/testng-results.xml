@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16169" started-at="2021-02-10T05:24:54Z" finished-at="2021-02-10T05:25:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16169" started-at="2021-02-10T05:24:54Z" finished-at="2021-02-10T05:25:11Z">
+      <class name="com.boddess.testscript.Login_Reg">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.boddess.testscript.Login_Reg@675d3402]" name="report" is-config="true" duration-ms="37868" started-at="2021-02-10T10:54:17Z" finished-at="2021-02-10T10:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.boddess.testscript.Login_Reg@675d3402]" name="Login" duration-ms="15981" started-at="2021-02-10T10:54:55Z" description="Login and Reg&gt;&gt; Verify user is able to login" finished-at="2021-02-10T10:55:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Login_Reg@675d3402]" name="getResult" is-config="true" duration-ms="48" started-at="2021-02-10T10:55:11Z" finished-at="2021-02-10T10:55:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Login_Reg.Login()[pri:0, instance:com.boddess.testscript.Login_Reg@675d3402] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.boddess.testscript.Login_Reg@675d3402]" name="endReport" is-config="true" duration-ms="2348" started-at="2021-02-10T10:55:11Z" finished-at="2021-02-10T10:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
