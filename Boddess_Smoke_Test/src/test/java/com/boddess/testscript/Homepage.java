@@ -102,7 +102,7 @@ public class Homepage extends Reporting
 	}	
 	
 	
-	//@Test(priority = 3, description="Homepage>>Test Case No.3>> Verify category navigations")
+	@Test(priority = 3, description="Homepage>>Test Case No.3>> Verify category navigations")
 	public void cat_Navigation()
 	{
 		String error=null;
@@ -116,15 +116,21 @@ public class Homepage extends Reporting
 			String Makeuphead= PropReader.getProp("Makeuphead");
 			String HairCategory= PropReader.getProp("HairCategory");
 			String HairHead= PropReader.getProp("HairHead");
-			String  = PropReader.getProp("");
-			String = PropReader.getProp("");
-			String  = PropReader.getProp("");
-			String  = PropReader.getProp("");
+			String BathBodyCategory = PropReader.getProp("Bath&BodyCategory");
+			String BathBodyhead= PropReader.getProp("Bath&Bodyhead");
+			String EssentialsCategory = PropReader.getProp("EssentialsCategory");
+			String Essentialshead= PropReader.getProp("Essentialshead");
+			String FragranceCategory= PropReader.getProp("FragranceCategory");
+			String Fragrancehead= PropReader.getProp("Fragrancehead");
+			String ToolsAccessoriesCategory = PropReader.getProp("ToolsAccessoriesCategory");
+			String ToolsAccessorieshead = PropReader.getProp("ToolsAccessorieshead");
+			String GiftsCategory = PropReader.getProp("GiftsCategory");
+			String Giftshead = PropReader.getProp("Giftshead");
 			//Mouse hover on Apparel Category
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
 			//Verifying Skin category is displayed
-			error=Skin;
+			error=SkinCategory;
 			wait(By.xpath(SkinCategory));
 			//Navigation to Skin CLP page
 			driver.findElement(By.xpath(SkinCategory)).click();
@@ -133,70 +139,70 @@ public class Homepage extends Reporting
 			//Verifying Makeup category is displayed 
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=Makeup;
+			error=MakeupCategory;
 			wait(By.xpath(MakeupCategory));
 			//Navigation to Makeup PLP page
 			driver.findElement(By.xpath(MakeupCategory)).click();
 			//Verifying user is on Makeup CLP page
 			wait(By.xpath(Makeuphead));
-			//Verifying Hait Category link is displayed 
+			//Verifying Hair Category link is displayed 
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=Hair;
+			error=HairCategory;
 			wait(By.xpath(HairCategory));
 			//Navigating to Hair PLP link is displayed
 			driver.findElement(By.xpath(HairCategory)).click();
 			error=HairHead;
-			//Verifying user in on Pant PLP page
+			//Verifying user in on Hair PLP page
 			wait(By.xpath(HairHead));
-			//Verifying Skirts link is displayed
+			//Verifying Bath & Body link is displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=skirts;
-			wait(By.xpath(skirts));
+			error=BathBodyCategory;
+			wait(By.xpath(BathBodyCategory));
 			//Navigating to Skirts PLP on Products Category
-			driver.findElement(By.xpath(skirts)).click();
+			driver.findElement(By.xpath(BathBodyCategory)).click();
 			//Verifying User is on Skirts PLP
-			error=skirtshead;
-			wait(By.xpath(skirtshead));
+			error=BathBodyhead;
+			wait(By.xpath(BathBodyhead));
 			//Verifying Tops category are displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=tops;
-			wait(By.xpath(tops));
-			//Navigating to Tops PLP
-			driver.findElement(By.xpath(tops)).click();
-			//Verifying User is on Tops PLP page
-			wait(By.xpath(topshead));
-			//Verifying Boys category is displayed
+			error=EssentialsCategory;
+			wait(By.xpath(EssentialsCategory));
+			//Navigating to Essentials PLP
+			driver.findElement(By.xpath(EssentialsCategory)).click();
+			//Verifying User is on Essentials PLP page
+			wait(By.xpath(Essentialshead));
+			//Verifying Fragrance Category  is displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=boys;
-			wait(By.xpath(boys));
+			error=FragranceCategory;
+			wait(By.xpath(FragranceCategory));
 			//Navigating to Boys PLP page 
-			driver.findElement(By.xpath(boys)).click();
+			driver.findElement(By.xpath(FragranceCategory)).click();
 			//Verifying Boys PLP page
-			wait(By.xpath(boyshead));
-			// Verifying Women Category is displayed
+			wait(By.xpath(Fragrancehead));
+			// Verifying Tools Accessories Category  is displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=women;
-			wait(By.xpath(women));
-			//Navigating to Women
-			driver.findElement(By.xpath(women)).click();
-			//Verifying user is on Women PLP page 
-			error=womenhead;
-			wait(By.xpath(womenhead));
-			//Verifying Men Category is displayed
+			error=ToolsAccessoriesCategory;
+			wait(By.xpath(ToolsAccessoriesCategory));
+			//Navigating to Tools Accessories Category
+			driver.findElement(By.xpath(ToolsAccessoriesCategory)).click();
+			//Verifying user is on Tools Accessories Category PLP page 
+			error=ToolsAccessorieshead;
+			wait(By.xpath(ToolsAccessorieshead));
+			//Verifying Gifts Category is displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
-			error=men;
-			wait(By.xpath(men));
-			//Navigating to Men PLP
-			driver.findElement(By.xpath(men)).click();
-			//Verifying Men PLP page
-			error=menhead;
-			wait(By.xpath(menhead));	
+			error=GiftsCategory;
+			wait(By.xpath(GiftsCategory));
+			//Navigating to Gifts Category PLP
+			driver.findElement(By.xpath(GiftsCategory)).click();
+			//Verifying Gifts Category PLP page
+			error=Giftshead;
+			wait(By.xpath(Giftshead));	
 		}
 		catch(AssertionError e)
 		{
@@ -211,6 +217,11 @@ public class Homepage extends Reporting
 		test = extent.createTest("Verify search by user entered keyword");
 		try 
 		{
+			String SearchIcon = PropReader.getProp("SearchIcon");
+			String searchText= PropReader.getProp("searchText");
+			String  placeText= PropReader.getProp("placeText");
+			String SearchResult= PropReader.getProp("SearchResult");
+			
 		error=SearchIcon;
 		//Verifying the Search bar placeholder text
 		String placeholderText=driver.findElement(By.xpath(searchText)).getAttribute("placeholder");
@@ -221,7 +232,7 @@ public class Homepage extends Reporting
 	    Enter.click();
 	    Thread.sleep(5000);
 	    //Entering keyword
-		Enter.sendKeys("Dress");
+		Enter.sendKeys("Cream");
 		Thread.sleep(5000);
 		Enter.sendKeys(Keys.ENTER);
 		//Verifying Search results displayed
