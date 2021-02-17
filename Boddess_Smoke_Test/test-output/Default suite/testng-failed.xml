@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.boddess.testscript.Homepage">
+      <class name="com.boddess.testscript.PLP">
         <methods>
-          <include name="Header_Links"/>
           <include name="endReport"/>
+          <include name="bread_plp"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
+      </class> <!-- com.boddess.testscript.PLP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

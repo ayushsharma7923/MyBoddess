@@ -31,14 +31,33 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">16.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">139.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.boddess.testscript.PLP</td><td><a href="#m1"><b>bread_plp</b>  ("PLP>>Test No.2 Verifying Breadcrumb on PLP Page")</a></td><td class="numi">1</td><td>1613544613960</td><td class="numi">124427</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.boddess.testscript.Login_Reg</td><td><a href="#m1"><b>Login</b>  ("Login and Reg>> Verify user is able to login")</a></td><td class="numi">1</td><td>1612934695133</td><td class="numi">15981</td></tr>
+<tr class="passedodd"><td rowspan="2">com.boddess.testscript.PLP</td><td><a href="#m2"><b>plp</b>  ("PLP>>Test No.1 Verifying if Banner is displayed on PLP Page")</a></td><td class="numi">1</td><td>1613544606364</td><td class="numi">7578</td></tr><tr class="passedodd"><td><a href="#m3"><b>static_plp</b>  ("PLP>>Test No.4 Verifying Static Text on PLP Page")</a></td><td class="numi">1</td><td>1613544738424</td><td class="numi">7654</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.boddess.testscript.Login_Reg:Login</h2>
+<h2 id="m1">com.boddess.testscript.PLP:bread_plp</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Skin&apos;]	 (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:8775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09dc4e4b9fe632fdfc3ba97c64d472b4</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.boddess.utilities.Setup.wait(Setup.java:44)
+<br/>at com.boddess.testscript.PLP.bread_plp(PLP.java:95)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.boddess.testscript.PLP:static_plp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.boddess.testscript.PLP:plp</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

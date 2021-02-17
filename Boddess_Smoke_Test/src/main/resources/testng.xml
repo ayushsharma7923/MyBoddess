@@ -12,6 +12,11 @@
 	<class name="com.boddess.testscript.Login_Reg" />
 	</classes>
 	</test>
+	<test name="PLP">
+	<classes>
+	<class name="com.boddess.testscript.PLP" />
+	</classes>
+	</test>
 
 
 </suite> <!-- Suite -->
