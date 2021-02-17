@@ -102,7 +102,7 @@ public class Homepage extends Reporting
 	}	
 	
 	
-	@Test(priority = 3, description="Homepage>>Test Case No.3>> Verify category navigations")
+	//@Test(priority = 3, description="Homepage>>Test Case No.3>> Verify category navigations")
 	public void cat_Navigation()
 	{
 		String error=null;
@@ -126,7 +126,8 @@ public class Homepage extends Reporting
 			String ToolsAccessorieshead = PropReader.getProp("ToolsAccessorieshead");
 			String GiftsCategory = PropReader.getProp("GiftsCategory");
 			String Giftshead = PropReader.getProp("Giftshead");
-			//Mouse hover on Apparel Category
+			
+			//Mouse hover on Categories Top  Category
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
 			//Verifying Skin category is displayed
@@ -160,12 +161,12 @@ public class Homepage extends Reporting
 			Mouseover(By.xpath(CategoriesTopMenu));
 			error=BathBodyCategory;
 			wait(By.xpath(BathBodyCategory));
-			//Navigating to Skirts PLP on Products Category
+			//Navigating to BathBodyCategory PLP on Products Category
 			driver.findElement(By.xpath(BathBodyCategory)).click();
-			//Verifying User is on Skirts PLP
+			//Verifying User is on BathBodyCategory PLP
 			error=BathBodyhead;
 			wait(By.xpath(BathBodyhead));
-			//Verifying Tops category are displayed
+			//Verifying EssentialsCategory category are displayed
 			error=CategoriesTopMenu;
 			Mouseover(By.xpath(CategoriesTopMenu));
 			error=EssentialsCategory;
@@ -179,9 +180,9 @@ public class Homepage extends Reporting
 			Mouseover(By.xpath(CategoriesTopMenu));
 			error=FragranceCategory;
 			wait(By.xpath(FragranceCategory));
-			//Navigating to Boys PLP page 
+			//Navigating to FragranceCategory PLP page 
 			driver.findElement(By.xpath(FragranceCategory)).click();
-			//Verifying Boys PLP page
+			//Verifying FragranceCategory PLP page
 			wait(By.xpath(Fragrancehead));
 			// Verifying Tools Accessories Category  is displayed
 			error=CategoriesTopMenu;
@@ -288,107 +289,7 @@ public class Homepage extends Reporting
 		
 	}
 	
-	//@Test(priority = 6, description = "Homepage>>Test Case No.6>>Verify the sorting Options from Low to High on Search Page")
-	public void search_sort()
-	{
-		test = extent.createTest("Verify the sorting Options from Low to High on Search Page");
-		String Error=null;
-		try
-		{
-		//Clicking on Sort option
-		WebElement sort=driver.findElement(By.xpath(SearchSort));
-		sort.click();
-		//Clicking on Sort Low to High
-		WebElement sort1=driver.findElement(By.xpath(sortltoHX));
-		sort1.click();
-		//Verifying Sort Option got selected
-		String temp=driver.findElement(By.xpath(sortopt)).getText();
-		Assert.assertEquals(temp, "Price Low to High");
-		//Verifying Prices
-		ArrayList<WebElement> Prices = (ArrayList<WebElement>)driver.findElements(By.xpath(prices));
-		for(int i=0;i<Prices.size()-1;i++)
-		{
-			double temp2=Double.parseDouble(Prices.get(i).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			double temp3=Double.parseDouble(Prices.get(i+1).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			if(temp2>temp3)		
-			{
-				Error="Sorting Failed";
-				break;
-			}
-		}
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(Error, ExtentColor.RED));
-		}	
-	}
 	
-	//@Test(priority = 7, description = "Homepage>>Test Case No.7>> Verify the sorting Options from High to Low on Search Page")
-	public void search_sortHtoL()
-	{
-		test = extent.createTest("Verify the sorting Options from High to Low on Search Page");
-		String Error=null;
-		try
-		{
-			Error=SearchSort;
-		//Clicking on Sort option
-		WebElement sort=driver.findElement(By.xpath(sortltoHX));
-		sort.click();
-		//Clicking on Sort Low to High
-		Error=sortHtol;
-		WebElement sort1=driver.findElement(By.xpath(sortHtol));
-		sort1.click();
-		//Verifying Sort Option got selected
-		Error=sortopt;
-		String temp=driver.findElement(By.xpath(sortopt)).getText();
-		Assert.assertEquals(temp, "Price High to Low");
-		//Verifying Prices
-		ArrayList<WebElement> Prices = (ArrayList<WebElement>)driver.findElements(By.xpath(prices));
-		for(int i=0;i<Prices.size()-1;i++)
-		{
-			double temp2=Double.parseDouble(Prices.get(i).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			double temp3=Double.parseDouble(Prices.get(i+1).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			if(temp2<temp3)		
-			{
-				Error="Sorting Failed";
-				break;
-			}
-		}
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(Error, ExtentColor.RED));
-		}	
-	}
-	
-	//@Test(priority = 8, description = "Homepage>>Test Case No.8>>Verify the filter options displayed")
-	public void search_filter()
-	{
-		String error=null;
-		test = extent.createTest("Verify the filter options displayed");
-		try {
-			//Selecting on Mayflower filter
-			error=colorfilter;
-			WebElement fil=driver.findElement(By.xpath(colorfilter));
-			fil.click();
-			//Clicking on Apply Button
-			error=applybtn;
-			//Clicking on Save button
-			wait(By.xpath(applybtn));
-			driver.findElement(By.xpath(applybtn)).click();
-			//Verifying Product after filter is applied
-			wait(By.xpath(prd1));
-			//Navigating to Homepage again
-			error=icon;
-			WebElement ico=driver.findElement(By.xpath(icon));
-			ico.click();
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(error+" is not displayed", ExtentColor.RED));
-		}		
-		
-	}
 	
 	  //@Test(priority =9, description = "Homepage>>Test Case No.9>>Verify User Navigation to wishlist as Guest")
 			public void wishlist_Guest_User() throws InterruptedException

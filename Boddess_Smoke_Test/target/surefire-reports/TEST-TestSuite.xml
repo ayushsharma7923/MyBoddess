@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="19.478" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="65.09" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4764621942780968490.tmp"/>
+    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3843315158110456730.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\PuTTY\;C:\Windows\System32;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38;C:\Program Files\Git\cmd;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\;C:\Users\vsaroha\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,7 +60,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="2.515"/>
-  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="1.373"/>
-  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="15.59"/>
+  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="4.595"/>
+  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="1.174"/>
+  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="14.949"/>
+  <testcase name="plp" classname="com.boddess.testscript.PLP" time="11.59"/>
+  <testcase name="bread_plp" classname="com.boddess.testscript.PLP" time="26.513"/>
+  <testcase name="static_plp" classname="com.boddess.testscript.PLP" time="6.269"/>
 </testsuite>
