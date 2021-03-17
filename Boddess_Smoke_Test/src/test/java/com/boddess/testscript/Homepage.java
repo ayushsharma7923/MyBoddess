@@ -420,14 +420,14 @@ public class Homepage extends Reporting
 		  try  {
 				// Verifying footer layer links are showing
 			  	// Verifying Footer Logo
-			  error=FooterBoddessLogo;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterBoddessLogo)).isEnabled());
+			   // error=FooterBoddessLogo;
+				//Assert.assertTrue(driver.findElement(By.xpath(FooterBoddessLogo)).isEnabled());
 				//Verifying static text displayed below Boddess logo
-				error=BoddessDesription;
-				Assert.assertTrue(driver.findElement(By.xpath(BoddessDesription)).isEnabled());
+				//error=BoddessDesription;
+				//Assert.assertTrue(driver.findElement(By.xpath(BoddessDesription)).isEnabled());
 				// Verifying Footer About Us is showing
-				error=FooterAboutUs;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterAboutUs)).isEnabled());
+				error=FooterAboutBodess;
+				Assert.assertTrue(driver.findElement(By.xpath(FooterAboutBodess)).isEnabled());
 				// Verifying Footer Career is showing
 				error=FooterCareers;
 				Assert.assertTrue(driver.findElement(By.xpath(FooterCareers)).isEnabled());

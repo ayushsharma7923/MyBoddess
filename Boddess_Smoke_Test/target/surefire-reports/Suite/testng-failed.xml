@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]">
-  <test name="Homepage(failed)">
+  <test name="PLP(failed)">
     <classes>
-      <class name="com.boddess.testscript.Login_Reg">
+      <class name="com.boddess.testscript.PDP">
         <methods>
           <include name="endReport"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="getResult"/>
+        </methods>
       </class> <!-- com.boddess.testscript.Login_Reg -->
       <class name="com.boddess.testscript.Homepage">
         <methods>
-          <include name="cat_Navigation"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="bread_plp"/>
+          <include name="plp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
     </classes>
-  </test> <!-- Homepage(failed) -->
+  </test> <!-- PLP(failed) -->
 </suite> <!-- Failed suite [Suite] -->

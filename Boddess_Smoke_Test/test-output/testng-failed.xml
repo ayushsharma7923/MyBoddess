@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.boddess.testscript.PLP">
+      <class name="com.boddess.testscript.PDP">
         <methods>
           <include name="endReport"/>
-          <include name="bread_plp"/>
+          <include name="qun_addtoCart"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
+      </class> <!-- com.boddess.testscript.PDP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
