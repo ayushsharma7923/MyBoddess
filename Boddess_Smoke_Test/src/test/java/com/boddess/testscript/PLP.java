@@ -167,7 +167,7 @@ public class PLP extends Reporting
 		}
 	}	
 	
-	 @Test(priority=5, description = "PLP>>Test No.5 Verifying Price Sorting Option")
+	// @Test(priority=5, description = "PLP>>Test No.5 Verifying Price Sorting Option")
 		public void subCategorySortAsc() throws InterruptedException
 		{
 			test = extent.createTest("PLP>>Verifying Sorting Options from low to high");

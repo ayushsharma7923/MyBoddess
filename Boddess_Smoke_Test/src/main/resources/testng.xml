@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
     
-      <test name="Homepage">
+     <test name="Homepage">
 	<classes>
 	<class name="com.boddess.testscript.Homepage" />
 	</classes>
@@ -17,6 +17,26 @@
 	<class name="com.boddess.testscript.PLP" />
 	</classes>
 	</test>
+	<test name="PDP">
+	<classes>
+	<class name="com.boddess.testscript.PDP" />
+	</classes>
+	</test>
+<!--	<test name="Static Pages">
+	<classes>
+	<class name="com.testscript.oslo.Static_Pages" />
+	</classes> 
+</test>-->
+<!--	<test name="My Account">
+	<classes>
+	<class name="com.testscript.oslo.MyAccount" />
+	</classes>
+    </test>	-->
+<!--<test name="Checkout">	
+	<classes>
+	<class name="com.testscript.oslo.Checkout" />
+	</classes>
+	</test> -->
 
 
 </suite> <!-- Suite -->
