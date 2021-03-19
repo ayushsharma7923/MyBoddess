@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="70.665" tests="14" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="915.328" tests="14" errors="0" skipped="0" failures="7">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2466801636038236562.tmp"/>
+    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf482030579327568856.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\PuTTY\;C:\Windows\System32;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38;C:\Program Files\Git\cmd;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\;C:\Users\vsaroha\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,18 +60,132 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="3.481"/>
-  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="2.061"/>
-  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="14.504"/>
-  <testcase name="plp" classname="com.boddess.testscript.PLP" time="11.306"/>
-  <testcase name="bread_plp" classname="com.boddess.testscript.PLP" time="12.691"/>
-  <testcase name="static_plp" classname="com.boddess.testscript.PLP" time="6.271"/>
-  <testcase name="prd_name" classname="com.boddess.testscript.PDP" time="16.169"/>
-  <testcase name="qty_addtoCart" classname="com.boddess.testscript.PDP" time="1.069"/>
-  <testcase name="social" classname="com.boddess.testscript.PDP" time="0.714"/>
-  <testcase name="prices_pdp" classname="com.boddess.testscript.PDP" time="0.192"/>
-  <testcase name="wish" classname="com.boddess.testscript.PDP" time="0.307"/>
-  <testcase name="Product_Image" classname="com.boddess.testscript.PDP" time="0.252"/>
-  <testcase name="Pincode_Validation" classname="com.boddess.testscript.PDP" time="1.096"/>
-  <testcase name="ProductDetailSection" classname="com.boddess.testscript.PDP" time="0.552"/>
+  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="4.378"/>
+  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="0.724"/>
+  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="15.511"/>
+  <testcase name="plp" classname="com.boddess.testscript.PLP" time="13.45"/>
+  <testcase name="bread_plp" classname="com.boddess.testscript.PLP" time="25.949"/>
+  <testcase name="static_plp" classname="com.boddess.testscript.PLP" time="7.176"/>
+  <testcase name="prd_name" classname="com.boddess.testscript.PDP" time="127.52">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;The Body Shop Tea Tree Skin Clearing Foaming Cleanser(150ml)&apos;]&quot;}&#10;  (Session info: chrome=89.0.4389.90)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d755183cc3537a88a20d81dc941eacd4&#10;*** Element info: {Using=xpath, value=//a[text()=&apos;The Body Shop Tea Tree Skin Clearing Foaming Cleanser(150ml)&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='The Body Shop Tea Tree Skin Clearing Foaming Cleanser(150ml)']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'VSAROHA', ip: '192.168.1.25', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d755183cc3537a88a20d81dc941eacd4
+*** Element info: {Using=xpath, value=//a[text()='The Body Shop Tea Tree Skin Clearing Foaming Cleanser(150ml)']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.boddess.utilities.Setup.Mouseover(Setup.java:32)
+	at com.boddess.testscript.PDP.PDP_Navigation(PDP.java:37)
+	at com.boddess.testscript.PDP.prd_name(PDP.java:48)
+</failure>
+  </testcase>
+  <testcase name="qty_addtoCart" classname="com.boddess.testscript.PDP" time="120.083">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //select[@name=&apos;qty&apos;]	 (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //select[@name='qty']	 (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.boddess.utilities.Setup.wait(Setup.java:44)
+	at com.boddess.testscript.PDP.qty_addtoCart(PDP.java:71)
+</failure>
+  </testcase>
+  <testcase name="social" classname="com.boddess.testscript.PDP" time="120.024">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt=&apos;Facebook&apos;] (tried for 120 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d755183cc3537a88a20d81dc941eacd4" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='Facebook'] (tried for 120 second(s) with 500 milliseconds interval)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'VSAROHA', ip: '192.168.1.25', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d755183cc3537a88a20d81dc941eacd4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.boddess.utilities.Setup.wait(Setup.java:44)
+	at com.boddess.testscript.PDP.social(PDP.java:94)
+</failure>
+  </testcase>
+  <testcase name="prices_pdp" classname="com.boddess.testscript.PDP" time="120.084">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;₹895.00&apos;]	&quot;}&#10;  (Session info: chrome=89.0.4389.90)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;&#10;System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d755183cc3537a88a20d81dc941eacd4&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;₹895.00&apos;]	}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='₹895.00']	"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'VSAROHA', ip: '192.168.1.25', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\vsaroha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:45930}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d755183cc3537a88a20d81dc941eacd4
+*** Element info: {Using=xpath, value=//span[text()='₹895.00']	}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.boddess.testscript.PDP.prices_pdp(PDP.java:116)
+</failure>
+  </testcase>
+  <testcase name="wish" classname="com.boddess.testscript.PDP" time="0.329"/>
+  <testcase name="Product_Image" classname="com.boddess.testscript.PDP" time="120.03">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //img[@id=&apos;magnifier-item-0&apos;] (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@id='magnifier-item-0'] (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.boddess.utilities.Setup.wait(Setup.java:44)
+	at com.boddess.testscript.PDP.Product_Image(PDP.java:152)
+</failure>
+  </testcase>
+  <testcase name="Pincode_Validation" classname="com.boddess.testscript.PDP" time="120.025">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;pincode_number&apos;] (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='pincode_number'] (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.boddess.utilities.Setup.wait(Setup.java:44)
+	at com.boddess.testscript.PDP.Pincode_Validation(PDP.java:174)
+</failure>
+  </testcase>
+  <testcase name="ProductDetailSection" classname="com.boddess.testscript.PDP" time="120.045">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()=&apos;Details&apos;]	 (tried for 120 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='Details']	 (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	at com.boddess.utilities.Setup.wait(Setup.java:44)
+	at com.boddess.testscript.PDP.ProductDetailSection(PDP.java:201)
+</failure>
+  </testcase>
 </testsuite>
