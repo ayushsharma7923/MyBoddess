@@ -18,7 +18,7 @@ import junit.framework.Assert;
 public class Checkout extends Reporting
 {
 	
-	@Test(priority = 1, description="Checkout>>Test Case No.1>>Verify user navigation to Cart page")
+	//@Test(priority = 1, description="Checkout>>Test Case No.1>>Verify user navigation to Cart page")
 	public void navigation_cart() throws InterruptedException
 	{
 		//Closing Newsletter popup and Cookies policy
@@ -71,7 +71,7 @@ public class Checkout extends Reporting
 
 	}
 
-	@Test(priority = 2, description="Checkout>>Test Case No.2>>Verify total, subtotal, discount")
+	//@Test(priority = 2, description="Checkout>>Test Case No.2>>Verify total, subtotal, discount")
 	public void order_summary()
 	{
 		String error=null;
@@ -97,7 +97,7 @@ public class Checkout extends Reporting
 		}
 	}
 	
-	@Test(priority = 3, description="Checkout>>Test Case No.3>>product name, qty and individual price")
+	//@Test(priority = 3, description="Checkout>>Test Case No.3>>product name, qty and individual price")
 	public void attributes()
 	{
 		String error=null;
