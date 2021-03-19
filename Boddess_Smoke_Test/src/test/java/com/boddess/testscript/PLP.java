@@ -108,36 +108,6 @@ public class PLP extends Reporting
 		}
 	}
 	
-	//@Test(priority = 3, description="PLP>>Test No.3 Verifying Breadcrumb and redirection on respective pages")
-		public void bread_crumb	() throws InterruptedException
-		{
-		test=extent.createTest("Verifying Breadcrumb and redirection on respective pages");
-		//Navigating to Homepage
-		navHomepage();
-		String error = null;
-		try {
-			//Mouse hover on Products
-			wait(By.xpath(Apparel_Category));
-			Mouseover(By.xpath(Apparel_Category));
-			//Clicking on PLP_Women_Dresses
-			driver.findElement(By.xpath(PLP_Women_Dresses)).click();
-			//Verifying Breadcrumb 
-			error=breadcrumb;
-			wait(By.xpath(breadcrumb));
-			//Clicking on Home page link on Breadcrumb
-			WebElement temp=driver.findElement(By.xpath("//a[contains(text(),'Home >')]"));
-			Actions act=new Actions(driver);
-			act.moveToElement(temp).click().build().perform();
-			//Verifying user landed on Homepage
-			error=Homepage_banner;
-			wait(By.xpath(Homepage_banner));
-			Assert.assertTrue(driver.findElement(By.xpath(Homepage_banner)).isDisplayed());
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(error + "  is not displayed", ExtentColor.RED));
-		}
-	}
 	
 	@Test(priority = 4, description="PLP>>Test No.4 Verifying Static Text on PLP Page")
 	public void static_plp() throws InterruptedException
@@ -212,6 +182,11 @@ public class PLP extends Reporting
 		String error=null;
 		test = extent.createTest("Verify the filters displayed and its application and Removal");
 		try {
+			String prd = PropReader.getProp("prd");
+			String Pricefilter = PropReader.getProp("Pricefilter");
+			String Price_Range_filter = PropReader.getProp("Price_Range_filter");
+			String Savebtn = PropReader.getProp("Savebtn");
+			String  cls= PropReader.getProp("cls");
 			//Verifying Product is displayed 
 			wait(By.xpath(prd));
 			error=Pricefilter;
@@ -247,6 +222,10 @@ public class PLP extends Reporting
 	{
 		test = extent.createTest("Verify User Navigation to wishlist as Guest");
 		try {
+			String homepage_Wishlist  = PropReader.getProp("homepage_Wishlist");
+			String LoginPopup = PropReader.getProp("LoginPopup");
+			String LoginPopupClose = PropReader.getProp("LoginPopupClose");
+			
 			WebDriverWait wait=new WebDriverWait(driver, 120);
 			wait(By.xpath(homepage_Wishlist));
 			//Verifying on clicking Wishlist Login form is displayed
@@ -273,8 +252,14 @@ public class PLP extends Reporting
      {
 	  test = extent.createTest("Verify User Navigation to wishlist as Logged In");
 	  try {
+		  String prd = PropReader.getProp("prd");
+		  String wishlistico = PropReader.getProp("wishlistico");
+		  String homepage_Wishlist = PropReader.getProp("homepage_Wishlist");
+		  String  wishlistEmpty= PropReader.getProp("wishlistEmpty");
+		  String MyAccountIconXpath = PropReader.getProp("MyAccountIconXpath");
+		  String SignOut = PropReader.getProp("SignOut");
 		//Calling Login Function
-		login();
+		//login();
 		//Putting wait on 1st product to be displayed
 		Mouseover(By.xpath(prd));
 		wait(By.xpath(wishlistico));
@@ -289,7 +274,7 @@ public class PLP extends Reporting
 		Mouseover(By.xpath(MyAccountIconXpath));
 		//Sign Out
 		driver.findElement(By.xpath(SignOut)).click();
-		close_newsletter();
+		
 		
 	  }
 	catch(AssertionError e)
@@ -300,71 +285,9 @@ public class PLP extends Reporting
 }
       
 
-	//@Test(priority=9, description = "PLP>>Test No.9 Verifying sub category sorting from high to low")
-	public void subCategorySortDsc() throws InterruptedException
-	{
-		//Mouse hover on Products
-		wait(By.xpath(Apparel_Category));
-		Mouseover(By.xpath(Apparel_Category));
-		//Clicking on PLP_Women_Dresses
-		driver.findElement(By.xpath(PLP_Women_Dresses)).click();
-		test = extent.createTest("Verifying sub category sorting from high to low");
-		String Error=null;
-		try
-		{
-		//Clicking on Sort option
-		WebElement sort=driver.findElement(By.xpath(PLPsort));
-		Thread.sleep(5000);
-		sort.click();
-		//Clicking on Sort Low to High
-		WebElement sort1=driver.findElement(By.xpath(sortHtoLX));
-		sort1.click();
-		//Verifying Sort Option got selected
-		String temp=driver.findElement(By.xpath(sortopt)).getText();
-		Assert.assertEquals(temp, "Price High to Low");
-		//Verifying Prices
-		ArrayList<WebElement> Prices = (ArrayList<WebElement>)driver.findElements(By.xpath(prices));
-		for(int i=0;i<Prices.size()-1;i++)
-		{
-			double temp2=Double.parseDouble(Prices.get(i).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			double temp3=Double.parseDouble(Prices.get(i+1).getText().replaceAll("[^a-zA-Z0-9]", ""));
-			if(temp2<temp3)		
-			{
-				Error="Sorting Failed";
-				break;
-			}
-		}
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(Error, ExtentColor.RED));
-		}
-	}
 	
-	// @Test(priority = 10, description = "PLP>>Test No.10 Verify page navigation from PLP to PDP")
-     public void Page_Navigation() throws InterruptedException
-     {
-	  test = extent.createTest("Verify page navigation from PLP to PDP");
-	  try {
-		 Mouseover(By.xpath(Apparel_Category));
-		//Clicking on Dresses
-		driver.findElement(By.xpath(PLP_Women_Dresses)).click();
-		//Clicking on Product Name
-		Mouseover(By.xpath(prd_new));
-		WebElement temp=driver.findElement(By.xpath(prd_new));
-		Actions action = new Actions(driver);
-		action.moveToElement(temp).click(temp).build().perform();
-		//Verifying Product Name is displayed on PDP
-		wait(By.xpath(prdnamePDP));
-		Assert.assertTrue(driver.findElement(By.xpath(prdnamePDP)).isDisplayed());
-		
-	  }
-	catch(AssertionError e)
-	{
-		test.log(Status.FAIL, MarkupHelper.createLabel("Wishlist Page not displayed for Logged In User", ExtentColor.RED));
-	}		
 	
-	}
+	
 	 
 
 }
