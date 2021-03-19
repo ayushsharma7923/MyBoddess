@@ -15,6 +15,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.boddess.reporting.Reporting;
 
+@SuppressWarnings("unused")
 public class Homepage extends Reporting
 
 {	
@@ -247,169 +248,17 @@ public class Homepage extends Reporting
 	}
 	
 	
-	//@Test(priority = 5, description = "Homepage>>Test Case No.5 Verify Search by Keywords Suggestion")
-	public void Searchbox_sugg() throws InterruptedException
-	{
-		String error=null;
-		test = extent.createTest("Verify Search by Keywords Suggestion");
-		try
-		{
-		//Navigating to Homepage again
-		navHomepage();
-		//Verifying Search icon is displayed
-		error=SearchIcon;
-		wait(By.xpath(SearchIcon));
-		WebElement Enter = driver.findElement(By.xpath(SearchIcon));	    
-	    Enter.click();
-	    //Entering Keyword
-		Enter.sendKeys("Shoes");
-		//Clicking on auto suggested
-		error=SearchSugg;
-		WebElement res= driver.findElement(By.xpath(SearchSugg));
-		wait(By.xpath(SearchSugg));
-		wait(By.xpath(SearchIcon));
-		res.click();
-		error=SearchBar;
-		//Comparing the entered text to the displayed text
-		WebElement restext= driver.findElement(By.xpath(SearchBar));
-		//Extracting value of Entered keyword from Search Bar
-		String temp=restext.getAttribute("value");
-		//Extracting Keyword for which results are displayed
-		error=Keywrd;
-		wait(By.xpath(Keywrd));
-		String temp1= driver.findElement(By.xpath(Keywrd)).getText();
-		//Comparing both
-		error="Keyword expected";
-		Assert.assertEquals(temp.replaceAll("[^a-zA-Z0-9]", ""), temp1.replaceAll("[^a-zA-Z0-9]", ""));
-		}
-		catch(AssertionError e)
-		{
-			test.log(Status.FAIL, MarkupHelper.createLabel(error + "  is not displayed", ExtentColor.RED));
-		}
-		
-	}
 	
 	
 	
-	  //@Test(priority =9, description = "Homepage>>Test Case No.9>>Verify User Navigation to wishlist as Guest")
-			public void wishlist_Guest_User() throws InterruptedException
-			{
-				test = extent.createTest("Verify User Navigation to wishlist as Guest");
-				try {
-					//Navigating to Homepage
-					navHomepage();
-					WebDriverWait wait=new WebDriverWait(driver, 120);
-					wait(By.xpath(homepage_Wishlist_Guest));
-					//Verifying on clicking Wishlist Login form is displayed
-					WebElement wishlogo= driver.findElement(By.xpath(homepage_Wishlist_Guest));
-					Actions act=new Actions(driver);
-					act.moveToElement(wishlogo).click().build().perform();
-					wait(By.xpath(LoginPopup));
-					//Closing the login pop-up
-					WebElement close=driver.findElement(By.xpath(LoginPopupClose));
-					close.click();
-					wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(LoginPopupClose)));
-				}
-				catch(AssertionError e)
-				{
-					test.log(Status.FAIL, MarkupHelper.createLabel("Login pop-up not displayed on clicking Wishlist as Guest", ExtentColor.RED));
-				}		
-				
-			}	
+	
+	 
 		
-		//@Test(priority = 10, description = "Homepage>>Test Case No.10>>Verify User Navigation to wishlist as Logged In")
-		public void wishlist_loggedIn() throws InterruptedException
-		{
-			test = extent.createTest("Verify User Navigation to wishlist as Logged In");
-			try {
-				//Calling Login Function
-				login();
-				//Verifying Wishlist icon/Navigation
-				wait(By.xpath(homepage_Wishlist_logged));
-				WebElement wishlogo= driver.findElement(By.xpath(homepage_Wishlist_logged));
-				Actions act=new Actions(driver);
-				act.moveToElement(wishlogo).click().build().perform();
-				Assert.assertTrue(driver.findElement(By.xpath(wishlistEmpty)).isDisplayed());
-				//Mousehover on My Account Icon
-				Mouseover(By.xpath(MyAccountIconXpath));
-				//Sign Out
-				driver.findElement(By.xpath(SignOut)).click();
-				//Closing newsletter pop-up
-				close_newsletter();
-					
-			}
-			catch(AssertionError e)
-			{
-				test.log(Status.FAIL, MarkupHelper.createLabel("Wishlist Page not displayed for Logged In User", ExtentColor.RED));
-			}		
-			
-		}
 		
-		//@Test(priority = 11, description="Homepage>>Test Case No.11>>Verifying Best Selling Products")
-		public void best_seller() throws InterruptedException
-		{
-			test=extent.createTest("Verifying Best Selling Products");
-			String error = null;
-			try
-			{
-				navHomepage();
-				//Verifying Best Selling Products Name is displayed
-				error=BestSellingPrdName;
-				wait(By.xpath(BestSellingPrdName));
-				//Verifying Best Selling Product Price is displayed
-				error=BestSellingPrdPrice;
-				wait(By.xpath(BestSellingPrdPrice));
-			}
-			catch(AssertionError e)
-			{
-				test.log(Status.FAIL, MarkupHelper.createLabel(error + "  is not displayed", ExtentColor.RED));
-			}	
-		}
 		
-		//@Test(priority = 12, description="Homepage>>Test Case No.12>> Verify Curated For you")
-		public void Spotlight_Carousel()
-		{
-			//Navigating to Homepage
-			navHomepage();
-			test=extent.createTest("Verify Curated For you");
-			try
-			{
-				//Verifying Curated for You Heading
-				wait(By.xpath(CurText));
-				//Verifying Curated Categories
-				wait(By.xpath(CurCat));
-				//Verifying Curated For you is displayed
-				wait(By.xpath(Curated));
-			}
-			catch(AssertionError e)
-			{
-				test.log(Status.FAIL, MarkupHelper.createLabel("In the spotlight Carosuel is not displayed", ExtentColor.RED));
-			}
-		}
 		
-		//@Test(priority = 13, description="Homepage>>Test Case No.13>> Verify Trending Now Products")
-		public void trendingnow()
-		{
-			test=extent.createTest("Verify Trending Now Products");
-			try {
-				//Verifying Trending Now section Heading
-				wait(By.xpath(TrenHead));
-				//Verifying Image of Trending Now Products
-				wait(By.xpath(TrenImg));
-				//Verifying Trending Now Section
-				wait(By.xpath(trending));
-				Assert.assertTrue(driver.findElement(By.xpath(trending)).isDisplayed());
-				//Verifying Navigation to PDP page
-				Mouseover(By.xpath(Trenpd1));
-				driver.findElement(By.xpath(Trenpd1)).click();
-				//Verifying heading of Product 1
-				wait(By.xpath(trendHead));
-			}
-			catch(AssertionError e)
-			{
-				test.log(Status.FAIL, MarkupHelper.createLabel("Handpicked Section is not displayed", ExtentColor.RED));
-			}
-		}
+		
+		
 	
 	
 	//@Test(priority = 14, description ="Homepage>>Test Case No. 14>>Verify footer links on Homepage") 
@@ -418,6 +267,10 @@ public class Homepage extends Reporting
 		  test = extent.createTest("Verify footer links on Homepage");
 		  String error = null;
 		  try  {
+			  String FooterAboutBodess = PropReader.getProp("FooterAboutBodess");
+			  String FooterCareers = PropReader.getProp("FooterCareers");
+			  String FooterStores = PropReader.getProp("FooterStores");
+			  
 				// Verifying footer layer links are showing
 			  	// Verifying Footer Logo
 			   // error=FooterBoddessLogo;
@@ -434,33 +287,7 @@ public class Homepage extends Reporting
 				// Verifying Footer Stores is showing
 				error=FooterStores;
 				Assert.assertTrue(driver.findElement(By.xpath(FooterStores)).isEnabled());
-				// Verifying Footer Quick Order is showing
-				error=FooterQuickOrder;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterQuickOrder)).isEnabled());
-				// Verifying Footer QCS is showing
-				error=FooterQCS;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterQCS)).isEnabled());
-				// Verifying Footer CS is showing
-				error=FooterCS;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterCS)).isEnabled());
-				// Verifying Footer Privacy is showing
-				error=FooterPrivacy;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterPrivacy)).isEnabled());
-				// Verifying Footer FAQ is showing
-				error=FooterFAQ;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterFAQ)).isEnabled());
-				// Verifying Footer Payment is showing
-				error=FooterPayment;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterPayment)).isEnabled());
-				// Verifying Footer T&S is showing
-				error=FooterTnS;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterTnS)).isEnabled());
-				// Verifying Footer Contact Us label is showing
-				error=FooterContactUs;
-				Assert.assertTrue(driver.findElement(By.xpath(FooterContactUs)).isEnabled());
-				// Verifying Footer copy right label is showing
-				error=CopyRight;
-				Assert.assertTrue(driver.findElement(By.xpath(CopyRight)).isEnabled());
+				
 								
 			  } 
 			catch(AssertionError e)
@@ -469,104 +296,9 @@ public class Homepage extends Reporting
 			}
 	  }
 	
-	//@Test(priority = 15, description ="Homepage>>Test Case No.15>>Verify newsletter subscription in footer")
-	  public void news()
-	  {
-		  test = extent.createTest("Verify newsletter subscription in footer");
-		  try {
-			  //Clicking on Newsletter
-			  WebElement temp=driver.findElement(By.xpath(Boddessnews));
-			  Actions act=new Actions(driver);
-			  act.moveToElement(temp).click().build().perform();
-			  temp.sendKeys("samplenews@email.com");
-			  //Clicking on submit button
-			  Mouseover(By.xpath(NewsClickButton));
-			  WebElement button=driver.findElement(By.xpath(NewsClickButton));
-			  button.click();
-			  //Verifying message is displayed
-			  wait(By.xpath(NewsSuccessMsg));
-		  }
-		  catch(AssertionError e)
-		  {
-				test.log(Status.FAIL, MarkupHelper.createLabel("Success Message is not displayed", ExtentColor.RED));
-			}
-		  
-	  }
-	  
-
-	  //@Test(priority = 16, description ="Homepage>>Test Case No.16>>Verify Social sites icons and links")
-		  public void SocialLinks()
-		  {
-			  test = extent.createTest("Verify Social site links in footer");
-			//  driver.findElement(By.xpath(OurStoryinFooterXpath)).click();
-			  String error = null;
-			  try  {
-					// Verifying footer Twitter social site links are showing
-				  	error=TwitterIcon;
-					Assert.assertTrue(driver.findElement(By.xpath(TwitterIcon)).isEnabled());
-					// Verifying footer FB social site links are showing
-				  	error=FacebookIcon;
-					Assert.assertTrue(driver.findElement(By.xpath(FacebookIcon)).isEnabled());
-					// Verifying footer Insta social site links are showing
-				  	error=FacebookIcon;
-					Assert.assertTrue(driver.findElement(By.xpath(FacebookIcon)).isEnabled());		
-					// Verifying footer LinkedIn social site links are showing
-				  	error=LinkedInIcon;
-					Assert.assertTrue(driver.findElement(By.xpath(LinkedInIcon)).isEnabled());
-				  } 
-				catch(AssertionError e)
-				{
-					test.log(Status.FAIL, MarkupHelper.createLabel(error + "  is not displayed", ExtentColor.RED));
-				}
-		}
 	
 	
 	
-	//@Test(priority =17, description ="Homepage>>Test Case No. 17>>Verify Live Chat icon displayed on Homepage")
-	public void liveChat() throws InterruptedException
-	{
-		//newsletter_Cookie_policy();
-		String error = null;
-		test=extent.createTest("Verify Live Chat icon displayed on Homepage");
-		WebDriverWait wait=new WebDriverWait(driver, 60);
-		try {
-			//Verify live chat icon display
-			error=Chat_Icon;
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Chat_Icon)));
-			Assert.assertTrue(driver.findElement(By.xpath(Chat_Icon)).isDisplayed());
-			//Navigate to open live chat icon
-			WebElement chat= driver.findElement(By.xpath(Chat_Icon));
-			chat.click();
-			//Verify chat text title "Questions? Chat with us!" when open the chat box
-			error=Chat_text_Title;
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Chat_text_Title)));
-			Assert.assertTrue(driver.findElement(By.xpath(Chat_text_Title)).isDisplayed());
-			//Verify to close live chat box
-			driver.findElement(By.xpath(Chat_close)).click();
-		}
-		catch (AssertionError e) {
-			test.log(Status.FAIL, MarkupHelper.createLabel(error+" is not displayed", ExtentColor.RED));
-		}
-	}
-	
-	//@Test(priority =18, description ="Homepage>>Test Case No. 18>>Verify Banner and Carousal Dots displayed on Homepage")
-	public void banner() throws InterruptedException
-	{
-		String error = null;
-		test=extent.createTest("Verify Banner and Carousal Dots displayed on Homepage");
-		try
-		{
-			//Verifying Banner on Home page
-			error="banner";
-			wait(By.xpath(banner));
-			//Verifying Banner Carousal on Home page
-			error="Banner Carousal";
-			wait(By.xpath(bannerCar));
-		}
-		catch (AssertionError e) {
-			test.log(Status.FAIL, MarkupHelper.createLabel(error+" is not displayed", ExtentColor.RED));
-		}
-	}
 }
 	
 
