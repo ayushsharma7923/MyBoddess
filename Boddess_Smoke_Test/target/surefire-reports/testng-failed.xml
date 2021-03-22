@@ -5,14 +5,8 @@
     <classes>
       <class name="com.boddess.testscript.PDP">
         <methods>
-          <include name="prd_name"/>
-          <include name="Pincode_Validation"/>
           <include name="ProductDetailSection"/>
-          <include name="Product_Image"/>
-          <include name="social"/>
           <include name="endReport"/>
-          <include name="prices_pdp"/>
-          <include name="qty_addtoCart"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
