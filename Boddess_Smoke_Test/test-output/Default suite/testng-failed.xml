@@ -5,8 +5,9 @@
     <classes>
       <class name="com.boddess.testscript.PDP">
         <methods>
+          <include name="prd_name"/>
           <include name="endReport"/>
-          <include name="qun_addtoCart"/>
+          <include name="qty_addtoCart"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
