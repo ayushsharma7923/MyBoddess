@@ -196,7 +196,7 @@ public class PDP extends Reporting
 				try {
 					String details_tab = PropReader.getProp("details_tab");
 					String reviews_tab = PropReader.getProp("reviews_tab");
-					String Instructions_tab = PropReader.getProp("Instructions_tab");
+					String More_Information_tab = PropReader.getProp("More_Information_tab");
 			    // verify details tab 
 				wait(By.xpath(details_tab));
 				error = details_tab;
@@ -206,9 +206,9 @@ public class PDP extends Reporting
 				error = reviews_tab;
 				Assert.assertEquals(driver.findElement(By.xpath(reviews_tab)).getText(), "Reviews");
 				  // verify Questions tab 
-				wait(By.xpath(Instructions_tab));
-				error = Instructions_tab;
-				Assert.assertEquals(driver.findElement(By.xpath(Instructions_tab)).getText(), "Instructions");
+				wait(By.xpath(More_Information_tab));
+				error = More_Information_tab;
+				Assert.assertEquals(driver.findElement(By.xpath(More_Information_tab)).getText(), "More Information");
 				
 				
 					} catch (AssertionError e)

@@ -31,16 +31,76 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">56.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">284.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.boddess.testscript.PDP</td><td><a href="#m1"><b>prd_name</b>  ("PDP>>Test No.1 Verifying item name displayed on PDP Page")</a></td><td class="numi">1</td><td>1617259984639</td><td class="numi">143925</td></tr><tr class="failedodd"><td><a href="#m2"><b>qty_addtoCart</b>  ("PDP>>Test No.2 Verifying Quantity and Add to cart")</a></td><td class="numi">1</td><td>1617260128662</td><td class="numi">120072</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">com.boddess.testscript.PLP</td><td><a href="#m1"><b>bread_plp</b>  ("PLP>>Test No.2 Verifying Breadcrumb on PLP Page")</a></td><td class="numi">1</td><td>1615967593325</td><td class="numi">29286</td></tr><tr class="passedodd"><td><a href="#m2"><b>static_plp</b>  ("PLP>>Test No.4 Verifying Static Text on PLP Page")</a></td><td class="numi">1</td><td>1615967622631</td><td class="numi">27012</td></tr>
+<tr class="passedodd"><td rowspan="6">com.boddess.testscript.PDP</td><td><a href="#m3"><b>Pincode_Validation</b>  ("PDP Page>> Test Case No. 7>> Pincode validation")</a></td><td class="numi">1</td><td>1617260267341</td><td class="numi">1103</td></tr><tr class="passedodd"><td><a href="#m4"><b>ProductDetailSection</b>  ("PDP Page>> Test Case No. 8>> Verify Product Detail Section")</a></td><td class="numi">1</td><td>1617260268450</td><td class="numi">620</td></tr><tr class="passedodd"><td><a href="#m5"><b>Product_Image</b>  ("PDP Page>> Test Case No.6>> Verify Product image displayed")</a></td><td class="numi">1</td><td>1617260267086</td><td class="numi">230</td></tr><tr class="passedodd"><td><a href="#m6"><b>prices_pdp</b>  ("PDP>>Test No.4 Verifying Prices on PDP")</a></td><td class="numi">1</td><td>1617260266761</td><td class="numi">119</td></tr><tr class="passedodd"><td><a href="#m7"><b>social</b>  ("PDP>>Test No.3 Verifying Social Media icon displayed on PDP Page")</a></td><td class="numi">1</td><td>1617260248763</td><td class="numi">17991</td></tr><tr class="passedodd"><td><a href="#m8"><b>wish</b>  ("PDP>>Test No.5>> Verify add to Wishlist is displayed")</a></td><td class="numi">1</td><td>1617260266886</td><td class="numi">194</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.boddess.testscript.PLP:bread_plp</h2>
+<h2 id="m1">com.boddess.testscript.PDP:prd_name</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),&apos;Garnier Men Power White Double Action Charcoal Fac&apos;)] (tried for 120 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at com.boddess.utilities.Setup.wait(Setup.java:44)
+<br/>at com.boddess.testscript.PDP.prd_name(PDP.java:52)
+<br/>25 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //span[contains(text(),&apos;Garnier Men Power White Double Action Charcoal Fac&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at com.boddess.utilities.Setup.wait(Setup.java:44)
+<br/>at com.boddess.testscript.PDP.prd_name(PDP.java:52)
+<br/>25 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.boddess.testscript.PLP:static_plp</h2>
+<h2 id="m2">com.boddess.testscript.PDP:qty_addtoCart</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //select[@name=&apos;qty&apos;]	 (tried for 120 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at com.boddess.utilities.Setup.wait(Setup.java:44)
+<br/>at com.boddess.testscript.PDP.qty_addtoCart(PDP.java:71)
+<br/>25 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //select[@name=&apos;qty&apos;]	
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;VSAROHA&apos;, ip: &apos;192.168.1.25&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at com.boddess.utilities.Setup.wait(Setup.java:44)
+<br/>at com.boddess.testscript.PDP.qty_addtoCart(PDP.java:71)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.boddess.testscript.PDP:Product_Image</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.boddess.testscript.PDP:ProductDetailSection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.boddess.testscript.PDP:prices_pdp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.boddess.testscript.PDP:social</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.boddess.testscript.PDP:wish</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.boddess.testscript.PDP:Pincode_Validation</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
