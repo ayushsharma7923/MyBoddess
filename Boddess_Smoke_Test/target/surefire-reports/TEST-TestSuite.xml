@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="94.461" tests="14" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="104.764" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7840991766686625011.tmp"/>
+    <property name="classworlds.conf" value="D:\Eclipse\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2183722380056564651.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\PuTTY\;C:\Windows\System32;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38;C:\Program Files\Git\cmd;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\vsaroha\AppData\Local\Programs\Python\Python38\;C:\Users\vsaroha\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,18 +60,18 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="1.641"/>
-  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="1.018"/>
-  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="17.83"/>
-  <testcase name="plp" classname="com.boddess.testscript.PLP" time="8.672"/>
-  <testcase name="bread_plp" classname="com.boddess.testscript.PLP" time="28.587"/>
-  <testcase name="static_plp" classname="com.boddess.testscript.PLP" time="9.396"/>
-  <testcase name="prd_name" classname="com.boddess.testscript.PDP" time="24.24"/>
-  <testcase name="qty_addtoCart" classname="com.boddess.testscript.PDP" time="0.592"/>
-  <testcase name="social" classname="com.boddess.testscript.PDP" time="0.397"/>
-  <testcase name="prices_pdp" classname="com.boddess.testscript.PDP" time="0.154"/>
-  <testcase name="wish" classname="com.boddess.testscript.PDP" time="0.194"/>
-  <testcase name="Product_Image" classname="com.boddess.testscript.PDP" time="0.146"/>
-  <testcase name="Pincode_Validation" classname="com.boddess.testscript.PDP" time="0.963"/>
-  <testcase name="ProductDetailSection" classname="com.boddess.testscript.PDP" time="0.631"/>
+  <testcase name="Header_Links" classname="com.boddess.testscript.Homepage" time="4.949"/>
+  <testcase name="Header_Links1" classname="com.boddess.testscript.Homepage" time="1.202"/>
+  <testcase name="Login" classname="com.boddess.testscript.Login_Reg" time="18.721"/>
+  <testcase name="plp" classname="com.boddess.testscript.PLP" time="13.808"/>
+  <testcase name="bread_plp" classname="com.boddess.testscript.PLP" time="23.161"/>
+  <testcase name="static_plp" classname="com.boddess.testscript.PLP" time="12.599"/>
+  <testcase name="prd_name" classname="com.boddess.testscript.PDP" time="26.475"/>
+  <testcase name="qty_addtoCart" classname="com.boddess.testscript.PDP" time="0.706"/>
+  <testcase name="social" classname="com.boddess.testscript.PDP" time="0.417"/>
+  <testcase name="prices_pdp" classname="com.boddess.testscript.PDP" time="0.158"/>
+  <testcase name="wish" classname="com.boddess.testscript.PDP" time="0.182"/>
+  <testcase name="Product_Image" classname="com.boddess.testscript.PDP" time="0.197"/>
+  <testcase name="Pincode_Validation" classname="com.boddess.testscript.PDP" time="1.37"/>
+  <testcase name="ProductDetailSection" classname="com.boddess.testscript.PDP" time="0.819"/>
 </testsuite>
