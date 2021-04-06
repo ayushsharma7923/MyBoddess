@@ -22,7 +22,5 @@ public class Checkout extends Reporting
 	//@Test(priority = 1, description="Checkout>>Test Case No.1>>Verify user navigation to Cart page")
 	public void navigation_cart() throws InterruptedException
 	{
-		//Closing Newsletter popup and Cookies policy
-		//news_Cookie_policy();
 	}
 }
