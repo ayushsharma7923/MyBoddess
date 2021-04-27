@@ -1,5 +1,6 @@
 package com.boddess.testscript;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -32,10 +33,13 @@ public class PDP extends Reporting
 		//Clicking on Skin
 		//wait(By.xpath(PLP_SkinBrightening));
 		driver.findElement(By.xpath(SkinCategory)).click();
-				
-		//Clicking on Product Name
-		Mouseover(By.xpath(prd));
+		//Scrolldown until find the element
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//This will scroll the page till the element is found		
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		wait(By.xpath(prd));
 		WebElement temp=driver.findElement(By.xpath(prd));
+        //Clicking on Product Name
 		Actions action = new Actions(driver);
 		action.moveToElement(temp).click(temp).build().perform();
 	}
@@ -246,11 +250,4 @@ public class PDP extends Reporting
 		}
 		
 	}
-		
-		
-		
-		
-	
-	
-	
 }
