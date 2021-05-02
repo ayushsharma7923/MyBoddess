@@ -77,7 +77,7 @@ public class PDP extends Reporting
 		
 	}
 	
-	//@Test(priority = 2, description="PDP>>Test No.2 Verifying Quantity and Add to cart")
+	@Test(priority = 2, description="PDP>>Test No.2 Verifying Quantity and Add to cart")
 	public void qty_addtoCart() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Quantity and Add to cart");
@@ -104,7 +104,7 @@ public class PDP extends Reporting
 		
 	}
 		
-	//@Test(priority = 3, description="PDP>>Test No.3 Verifying Social Media icon displayed on PDP Page")
+	@Test(priority = 3, description="PDP>>Test No.3 Verifying Social Media icon displayed on PDP Page")
 	public void social() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Social Media icon displayed on PDP Page");
@@ -133,7 +133,7 @@ public class PDP extends Reporting
 				
 	}
 	
-	//@Test(priority = 4, description="PDP>>Test No.4 Verifying Prices on PDP")
+	@Test(priority = 4, description="PDP>>Test No.4 Verifying Prices on PDP")
 	public void prices_pdp() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Prices on PDP");
@@ -156,7 +156,7 @@ public class PDP extends Reporting
 	}				
 		
 		
-	//@Test(priority = 5, description="PDP>>Test No.5>> Verify add to Wishlist is displayed")
+	@Test(priority = 5, description="PDP>>Test No.5>> Verify add to Wishlist is displayed")
 	public void wish() throws InterruptedException
 	{
 		test=extent.createTest("Verify add to Wishlist is displayed");
@@ -179,7 +179,7 @@ public class PDP extends Reporting
 		
 	}
 	
-	//@Test(priority = 6, description="PDP Page>> Test Case No.6>> Verify Product image displayed")
+	@Test(priority = 6, description="PDP Page>> Test Case No.6>> Verify Product image displayed")
 	public void Product_Image() throws InterruptedException
 	{
 		test = extent.createTest("Verify Product Image");
@@ -203,7 +203,7 @@ public class PDP extends Reporting
 	}
 	
 	
-		//@Test(priority = 7, description="PDP Page>> Test Case No. 7>> Pincode validation")
+		@Test(priority = 7, description="PDP Page>> Test Case No. 7>> Pincode validation")
 		public void Pincode_Validation() throws InterruptedException
 		{
 			test = extent.createTest("Verify pincode");
@@ -235,7 +235,7 @@ public class PDP extends Reporting
 			
 		}
 		
-       // @Test(priority = 8, description="PDP Page>> Test Case No. 8>> Verify Product Detail Section")
+       @Test(priority = 8, description="PDP Page>> Test Case No. 8>> Verify Product Detail Section")
 			public void ProductDetailSection() throws InterruptedException
 			{	
 				closeHomepgaePopUp(null);
@@ -267,7 +267,7 @@ public class PDP extends Reporting
 					}	
 			}
 
-	//@Test(priority = 9, description="PDP>>Test No.9 Verifying Breadcrumbs")
+	@Test(priority = 9, description="PDP>>Test No.9 Verifying Breadcrumbs")
 	public void breadcrumbs_pdp() throws InterruptedException
 	{
 		closeHomepgaePopUp(null);
@@ -298,7 +298,7 @@ public class PDP extends Reporting
 	
 	}
 	
-	//@Test(priority = 10, description="PDP Page>> Test Case No. 10>> Pincode validation check by correct pincode")
+	@Test(priority = 10, description="PDP Page>> Test Case No. 10>> Pincode validation check by correct pincode")
 	public void Pincode_Validation_correct() throws InterruptedException
 	{
 		test = extent.createTest("Pincode validation check by correct pincode");
