@@ -21,6 +21,16 @@ public class Login_Reg extends Reporting {
 		String SubmitLoginButton = PropReader.getProp("SubmitLoginButton");
 		String LogoutXpath = PropReader.getProp("LogoutXpath");	
 		String LoginIconXpathAfterLogin = PropReader.getProp("LoginIconXpathAfterLogin");	
+		String NoThanksId = PropReader.getProp("NoThanksId");
+		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
+		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
+		wait(By.id(NoThanksId));
+		driver.findElement(By.id(NoThanksId)).click();
+		wait(By.xpath(SiteloadPopupCloseButtonXpath));
+		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
+		wait(By.xpath(SitelogoXpath));
+		
+		
 		wait(By.xpath(LoginIconXpath));
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
