@@ -51,6 +51,7 @@ public class Setup  {
 		clickablewait.until(ExpectedConditions.elementToBeClickable(by));
 	}
 	
+	
 }
 
 	
