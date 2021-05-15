@@ -44,10 +44,27 @@ public class PLP extends Reporting
 		driver.findElement(By.xpath(SkinCategory)).click();
 	}
 	
+	public void CloseSitePopup()
+	
+	{
+		String NoThanksId = PropReader.getProp("NoThanksId");
+		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
+		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
+		wait(By.id(NoThanksId));
+		driver.findElement(By.id(NoThanksId)).click();
+		wait(By.xpath(SiteloadPopupCloseButtonXpath));
+		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
+		
+	}
+	
 	@Test(priority = 1, description="PLP>>Test No.1 Verifying if Banner is displayed on PLP Page")
 	public void plp() throws InterruptedException
 	{
 		test=extent.createTest("Verifying if Banner is displayed on PLP Page");
+		
+		
+		//CloseSitePopup();
+		
 		//Navigation to PLP
 		PLP_Navigation();
 		try {
@@ -79,6 +96,7 @@ public class PLP extends Reporting
 			String bread_link = PropReader.getProp("bread_link");
 			String Skin_banner = PropReader.getProp("Skin_banner");
 			
+			
 			//Mouse hover on Products
 			Mouseover(By.xpath(CategoriesTopMenu));
 			//Waiting for SkinCategory Category is displayed
@@ -109,10 +127,11 @@ public class PLP extends Reporting
 	}
 	
 	
-	@Test(priority = 4, description="PLP>>Test No.4 Verifying Static Text on PLP Page")
+	@Test(priority = 3, description="PLP>>Test No.4 Verifying Static Text on PLP Page")
 	public void static_plp() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Static Text on PLP Page");
+		
 		try {
 			String CategoriesTopMenu  = PropReader.getProp("CategoriesTopMenu");
 			String Skin_Brightening_SubCat = PropReader.getProp("Skin_Brightening_SubCat");
@@ -137,11 +156,13 @@ public class PLP extends Reporting
 		}
 	}	
 	
-	// @Test(priority=5, description = "PLP>>Test No.5 Verifying Price Sorting Option")
+	//@Test(priority=5, description = "PLP>>Test No.5 Verifying Price Sorting Option")
 		public void subCategorySortAsc() throws InterruptedException
 		{
 			test = extent.createTest("PLP>>Verifying Sorting Options from low to high");
 			String Error=null;
+	
+		
 			try
 			{
 				String sortopt = PropReader.getProp("sortopt");
@@ -284,12 +305,6 @@ public class PLP extends Reporting
 	
 }
       
-
-	
-	
-	
-	 
-
 }
 
 

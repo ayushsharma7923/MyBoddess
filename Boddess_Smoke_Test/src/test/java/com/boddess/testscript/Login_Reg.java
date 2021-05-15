@@ -24,20 +24,21 @@ public class Login_Reg extends Reporting {
 		String NoThanksId = PropReader.getProp("NoThanksId");
 		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
 		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
-		wait(By.id(NoThanksId));
-		driver.findElement(By.id(NoThanksId)).click();
-		wait(By.xpath(SiteloadPopupCloseButtonXpath));
-		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
-		wait(By.xpath(SitelogoXpath));
+		/*
+		 * wait(By.id(NoThanksId)); driver.findElement(By.id(NoThanksId)).click();
+		 * wait(By.xpath(SiteloadPopupCloseButtonXpath));
+		 * driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
+		 * wait(By.xpath(SitelogoXpath));
+		 */
 		
 		
 		wait(By.xpath(LoginIconXpath));
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
-		driver.findElement(By.xpath(EmailForLogin)).sendKeys("vsaroha@solveda.com");
+		driver.findElement(By.xpath(EmailForLogin)).sendKeys("boddesstest@gmail.com");
 		Thread.sleep(500);
 		wait(By.xpath(PasswordForLogin));
-		driver.findElement(By.xpath(PasswordForLogin)).sendKeys("team@123");
+		driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
 		driver.findElement(By.xpath(SubmitLoginButton)).click();
 		Thread.sleep(3000);
 		clickablewait(By.xpath(LoginIconXpathAfterLogin));
