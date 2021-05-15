@@ -5,7 +5,7 @@
     <classes>
       <class name="com.boddess.testscript.PDP">
         <methods>
-          <include name="prd_name"/>
+          <include name="Pincode_Validation_correct"/>
           <include name="endReport"/>
           <include name="report"/>
           <include name="getResult"/>

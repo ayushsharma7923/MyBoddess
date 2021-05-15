@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
     
-     <test name="Homepage">
+    <test name="Homepage">
 	<classes>
 	<class name="com.boddess.testscript.Homepage" />
 	</classes>

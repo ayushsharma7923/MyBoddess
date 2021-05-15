@@ -5,15 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.boddess.reporting.Reporting;
-
-
-
 public class PDP extends Reporting
+
 {	
 	public void closeHomepgaePopUp(By by)
 	{
@@ -53,6 +50,7 @@ public class PDP extends Reporting
         //Clicking on Product Name
 		Actions action = new Actions(driver);
 		action.moveToElement(temp).click(temp).build().perform();
+		
 	}
 	
 	@Test(priority = 1, description="PDP>>Test No.1 Verifying item name displayed on PDP Page")
@@ -60,7 +58,7 @@ public class PDP extends Reporting
 	{
 		test=extent.createTest("Verifying item name displayed on PDP Page");
 		
-		closeHomepgaePopUp(null);
+		//closeHomepgaePopUp(null);
 		
 		//Navigation to PDP
 		PDP_Navigation();
@@ -81,10 +79,7 @@ public class PDP extends Reporting
 	public void qty_addtoCart() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Quantity and Add to cart");
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
-		
+	
 		String error = null;
 		try{
 			String qty_listbox = PropReader.getProp("qty_listbox");
@@ -109,10 +104,6 @@ public class PDP extends Reporting
 	{
 		test=extent.createTest("Verifying Social Media icon displayed on PDP Page");
 		
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
-		
 		String error = null;
 		try{
 			String facebook = PropReader.getProp("facebook");
@@ -134,14 +125,10 @@ public class PDP extends Reporting
 	}
 	
 	@Test(priority = 4, description="PDP>>Test No.4 Verifying Prices on PDP")
+	
 	public void prices_pdp() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Prices on PDP");
-		
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
-		
 		
 		try{
 			String price = PropReader.getProp("price");
@@ -161,10 +148,6 @@ public class PDP extends Reporting
 	{
 		test=extent.createTest("Verify add to Wishlist is displayed");
 		
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
-		
 		try
 		{
 			String wish = PropReader.getProp("wish");
@@ -183,10 +166,7 @@ public class PDP extends Reporting
 	public void Product_Image() throws InterruptedException
 	{
 		test = extent.createTest("Verify Product Image");
-		
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
+	
 		String error = null;
 		try {
 		
@@ -203,13 +183,11 @@ public class PDP extends Reporting
 	}
 	
 	
-		@Test(priority = 7, description="PDP Page>> Test Case No. 7>> Pincode validation")
+	@Test(priority = 7, description="PDP Page>> Test Case No. 7>> Pincode validation")
 		public void Pincode_Validation() throws InterruptedException
 		{
 			test = extent.createTest("Verify pincode");
-			closeHomepgaePopUp(null);
 			
-			PDP_Navigation();
 			
 			String error = null;
 			try {
@@ -222,7 +200,7 @@ public class PDP extends Reporting
 			driver.findElement(By.xpath(PincodeEdit)).clear();
 			error = "not able to edit pincode";
 			driver.findElement(By.xpath(PincodeEdit)).sendKeys("123");
-			//error = PincodeUpdate;
+			error = PincodeUpdate;
 			//driver.findElement(By.xpath(PincodeUpdate)).click();
 			wait(By.xpath(Pincodevalidation));
 			error = "Validation message not showing";
@@ -235,11 +213,11 @@ public class PDP extends Reporting
 			
 		}
 		
-       @Test(priority = 8, description="PDP Page>> Test Case No. 8>> Verify Product Detail Section")
+    @Test(priority = 8, description="PDP Page>> Test Case No. 8>> Verify Product Detail Section")
 			public void ProductDetailSection() throws InterruptedException
 			{	
-				closeHomepgaePopUp(null);
-				PDP_Navigation();
+				//closeHomepgaePopUp(null);
+				//PDP_Navigation();
 				
 				test = extent.createTest("Verify product detail section");
 				String error = null;
@@ -270,8 +248,8 @@ public class PDP extends Reporting
 	@Test(priority = 9, description="PDP>>Test No.9 Verifying Breadcrumbs")
 	public void breadcrumbs_pdp() throws InterruptedException
 	{
-		closeHomepgaePopUp(null);
-		PDP_Navigation();
+		//closeHomepgaePopUp(null);
+		//PDP_Navigation();
 		String error=null;
 		test=extent.createTest("Verifying Breadcrumbs");
 		try{
@@ -302,9 +280,6 @@ public class PDP extends Reporting
 	public void Pincode_Validation_correct() throws InterruptedException
 	{
 		test = extent.createTest("Pincode validation check by correct pincode");
-		closeHomepgaePopUp(null);
-		
-		PDP_Navigation();
 		
 		String error = null;
 		try {
@@ -321,11 +296,12 @@ public class PDP extends Reporting
 		error = "Validation message not showing";
 		Assert.assertNotEquals(driver.findElement(By.xpath(DeliveryEstimateText)).getText(), "Estimated Delivery By");
 		
+		
 			} catch (AssertionError e)
 			{
 				test.log(Status.FAIL, MarkupHelper.createLabel(error, ExtentColor.RED));
 			}	
-		
+
 	}
 	
 }
