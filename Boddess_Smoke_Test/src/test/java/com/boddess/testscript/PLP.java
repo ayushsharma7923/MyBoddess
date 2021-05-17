@@ -156,7 +156,7 @@ public class PLP extends Reporting
 		}
 	}	
 	
-	//@Test(priority=5, description = "PLP>>Test No.5 Verifying Price Sorting Option")
+	//@Test(priority=4, description = "PLP>>Test No.5 Verifying Price Sorting Option")
 		public void subCategorySortAsc() throws InterruptedException
 		{
 			test = extent.createTest("PLP>>Verifying Sorting Options from low to high");
@@ -197,7 +197,7 @@ public class PLP extends Reporting
 			}
 		}
 	 
-	//@Test(priority=6, description = "PLP>>Test No.6 Verify filters displayed and its application and Removal")
+	//@Test(priority=5, description = "PLP>>Test No.6 Verify filters displayed and its application and Removal")
 	public void filter()
 	{
 		String error=null;
@@ -238,7 +238,7 @@ public class PLP extends Reporting
 		
 		
 	
-	//@Test(priority =7, description = "PLP>>Test No.7 Verify User Navigation to wishlist as Guest")
+	//@Test(priority =6, description = "PLP>>Test No.7 Verify User Navigation to wishlist as Guest")
 	public void wishlist_Guest_User() throws InterruptedException
 	{
 		test = extent.createTest("Verify User Navigation to wishlist as Guest");
@@ -268,7 +268,7 @@ public class PLP extends Reporting
 		
 	}
 
-    //  @Test(priority = 8, description = "PLP>>Test No.8 Verify User Navigation to wishlist as Logged In")
+    //  @Test(priority = 7, description = "PLP>>Test No.8 Verify User Navigation to wishlist as Logged In")
      public void wishlist_loggedIn() throws InterruptedException
      {
 	  test = extent.createTest("Verify User Navigation to wishlist as Logged In");
