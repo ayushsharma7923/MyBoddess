@@ -27,11 +27,11 @@
 	<class name="com.testscript.oslo.Static_Pages" />
 	</classes> 
 </test>-->
-<!--	<test name="My Account">
+	<test name="My Account">
 	<classes>
-	<class name="com.testscript.oslo.MyAccount" />
+	<class name="com.boddess.testscript.MyAccount" />
 	</classes>
-    </test>	-->
+    </test>
 <!--<test name="Checkout">	
 	<classes>
 	<class name="com.testscript.oslo.Checkout" />

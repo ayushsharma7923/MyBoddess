@@ -1,65 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="PLP(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="com.boddess.testscript.Homepage">
         <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="plp"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
           <include name="endReport"/>
+          <include name="Footer"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
-      <class name="com.boddess.testscript.Login_Reg">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
-    </classes>
-  </test> <!-- PLP(failed) -->
-  <test name="PDP(failed)">
-    <classes>
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
       </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="prd_name"/>
-          <include name="Pincode_Validation"/>
-          <include name="ProductDetailSection"/>
-          <include name="Product_Image"/>
-          <include name="Pincode_Validation_correct"/>
-          <include name="social"/>
-          <include name="endReport"/>
-          <include name="breadcrumbs_pdp"/>
-          <include name="qty_addtoCart"/>
-          <include name="report"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
-      <class name="com.boddess.testscript.Login_Reg">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
     </classes>
-  </test> <!-- PDP(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
