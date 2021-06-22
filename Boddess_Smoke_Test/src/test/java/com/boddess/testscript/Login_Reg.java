@@ -9,7 +9,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.boddess.reporting.Reporting;
 
-
+@SuppressWarnings("unused")
 public class Login_Reg extends Reporting {
 	
 	@Test(priority = 1, description="Login and Reg>> Verify user is able to login")
@@ -24,12 +24,14 @@ public class Login_Reg extends Reporting {
 		String NoThanksId = PropReader.getProp("NoThanksId");
 		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
 		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
+		
 		/*
 		 * wait(By.id(NoThanksId)); driver.findElement(By.id(NoThanksId)).click();
 		 * wait(By.xpath(SiteloadPopupCloseButtonXpath));
 		 * driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
 		 * wait(By.xpath(SitelogoXpath));
 		 */
+		 
 		
 		
 		wait(By.xpath(LoginIconXpath));

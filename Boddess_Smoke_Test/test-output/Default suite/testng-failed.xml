@@ -5,9 +5,11 @@
     <classes>
       <class name="com.boddess.testscript.Homepage">
         <methods>
+          <include name="banner"/>
+          <include name="news"/>
           <include name="endReport"/>
-          <include name="Footer"/>
           <include name="report"/>
+          <include name="SocialLinks"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Homepage -->

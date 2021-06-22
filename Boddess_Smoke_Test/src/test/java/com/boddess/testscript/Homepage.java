@@ -1,5 +1,7 @@
 package com.boddess.testscript;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -16,9 +18,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.boddess.reporting.Reporting;
 
 public class Homepage extends Reporting
-
 {	
-	
 	public void closeHomepgaePopUp(By by)
 	{
 		String NoThanksId = PropReader.getProp("NoThanksId");
@@ -28,7 +28,6 @@ public class Homepage extends Reporting
 		driver.findElement(By.id(NoThanksId)).click();
 		wait(By.xpath(SiteloadPopupCloseButtonXpath));
 		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
-		
 	}
 	
 	@Test(priority = 1, description="Homepage>> Test Case No.1>> Verify Boddess logo on Homepage")
@@ -262,8 +261,6 @@ public class Homepage extends Reporting
 			test.log(Status.FAIL, MarkupHelper.createLabel(error+"  is not displayed", ExtentColor.RED));
 			}	
 		}
-		
-		
 		//@Test(priority = 5, description = "Homepage>>Test Case No.5 Verify Search by Keywords Suggestion")
 		public void Searchbox_sugg() throws InterruptedException
 		{
@@ -271,10 +268,9 @@ public class Homepage extends Reporting
 			test = extent.createTest("Verify Search by Keywords Suggestion");
 			try
 			{
+			String SearchIcon =PropReader.getProp("SearchIcon");;
 			//Navigating to Homepage again
-				
-				//navHomepage();
-		
+			//navHomepage();
 			//Verifying Search icon is displayed
 			error=SearchIcon;
 			wait(By.xpath(SearchIcon));
@@ -282,17 +278,20 @@ public class Homepage extends Reporting
 		    Enter.click();
 		    //Entering Keyword
 			Enter.sendKeys("Shoes");
+			String SearchSugg = null;
 			//Clicking on auto suggested
 			error=SearchSugg;
 			WebElement res= driver.findElement(By.xpath(SearchSugg));
 			wait(By.xpath(SearchSugg));
 			wait(By.xpath(SearchIcon));
 			res.click();
+			String SearchBar = null;
 			error=SearchBar;
 			//Comparing the entered text to the displayed text
 			WebElement restext= driver.findElement(By.xpath(SearchBar));
 			//Extracting value of Entered keyword from Search Bar
 			String temp=restext.getAttribute("value");
+			String Keywrd = null;
 			//Extracting Keyword for which results are displayed
 			error=Keywrd;
 			wait(By.xpath(Keywrd));
@@ -315,15 +314,19 @@ public class Homepage extends Reporting
 			String Error=null;
 			try
 			{
+			String SearchSort = null;
 			//Clicking on Sort option
 			WebElement sort=driver.findElement(By.xpath(SearchSort));
 			sort.click();
+			String sortltoHX = null;
 			//Clicking on Sort Low to High
 			WebElement sort1=driver.findElement(By.xpath(sortltoHX));
 			sort1.click();
+			String sortopt = null;
 			//Verifying Sort Option got selected
 			String temp=driver.findElement(By.xpath(sortopt)).getText();
 			Assert.assertEquals(temp, "Price Low to High");
+			String prices = null;
 			//Verifying Prices
 			ArrayList<WebElement> Prices = (ArrayList<WebElement>)driver.findElements(By.xpath(prices));
 			for(int i=0;i<Prices.size()-1;i++)
@@ -350,18 +353,23 @@ public class Homepage extends Reporting
 			String Error=null;
 			try
 			{
+				String SearchSort = null;
 				Error=SearchSort;
+			String sortltoHX = null;
 			//Clicking on Sort option
 			WebElement sort=driver.findElement(By.xpath(sortltoHX));
 			sort.click();
+			String sortHtol = null;
 			//Clicking on Sort Low to High
 			Error=sortHtol;
 			WebElement sort1=driver.findElement(By.xpath(sortHtol));
 			sort1.click();
+			String sortopt = null;
 			//Verifying Sort Option got selected
 			Error=sortopt;
 			String temp=driver.findElement(By.xpath(sortopt)).getText();
 			Assert.assertEquals(temp, "Price High to Low");
+			String prices = null;
 			//Verifying Prices
 			ArrayList<WebElement> Prices = (ArrayList<WebElement>)driver.findElements(By.xpath(prices));
 			for(int i=0;i<Prices.size()-1;i++)
@@ -387,17 +395,21 @@ public class Homepage extends Reporting
 			String error=null;
 			test = extent.createTest("Verify the filter options displayed");
 			try {
+				String colorfilter = null;
 				//Selecting on Mayflower filter
 				error=colorfilter;
 				WebElement fil=driver.findElement(By.xpath(colorfilter));
 				fil.click();
+				String applybtn = null;
 				//Clicking on Apply Button
 				error=applybtn;
 				//Clicking on Save button
 				wait(By.xpath(applybtn));
 				driver.findElement(By.xpath(applybtn)).click();
+				String prd1 = null;
 				//Verifying Product after filter is applied
 				wait(By.xpath(prd1));
+				String icon = null;
 				//Navigating to Homepage again
 				error=icon;
 				WebElement ico=driver.findElement(By.xpath(icon));

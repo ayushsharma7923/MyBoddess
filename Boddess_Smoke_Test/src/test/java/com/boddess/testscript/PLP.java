@@ -17,10 +17,7 @@ import com.boddess.reporting.Reporting;
 import junit.framework.Assert;
 
 
-
-
-
-
+@SuppressWarnings("unused")
 public class PLP extends Reporting 
 {
 	
