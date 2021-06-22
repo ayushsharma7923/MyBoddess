@@ -22,7 +22,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.boddess.reporting.Reporting;
 
 
-
+@SuppressWarnings("unused")
 public class MyAccount extends Reporting {
 	
 	String LoginIconXpath = PropReader.getProp("LoginIconXpath");
