@@ -1,94 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="Login_Reg(failed)">
+  <test name="Homepage(failed)">
     <classes>
       <class name="com.boddess.testscript.Homepage">
         <methods>
-          <include name="getResult"/>
+          <include name="Header_Links"/>
+          <include name="Header_Links1"/>
+          <include name="cat_Navigation"/>
         </methods>
       </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="report"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+  <test name="Login_Reg(failed)">
+    <classes>
       <class name="com.boddess.testscript.Login_Reg">
         <methods>
           <include name="Login"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
-          <include name="endReport"/>
           <include name="report"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
     </classes>
   </test> <!-- Login_Reg(failed) -->
   <test name="PLP(failed)">
     <classes>
-      <class name="com.boddess.testscript.Homepage">
+      <class name="com.boddess.testscript.MyAccount">
         <methods>
-          <include name="getResult"/>
+          <include name="report"/>
         </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.Login_Reg">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
+      </class> <!-- com.boddess.testscript.MyAccount -->
       <class name="com.boddess.testscript.PLP">
         <methods>
           <include name="bread_plp"/>
           <include name="plp"/>
           <include name="static_plp"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.PLP -->
-      <class name="com.boddess.testscript.MyAccount">
-        <methods>
-          <include name="endReport"/>
-          <include name="report"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.MyAccount -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
     </classes>
   </test> <!-- PLP(failed) -->
   <test name="PDP(failed)">
     <classes>
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.Login_Reg">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
-          <include name="endReport"/>
           <include name="report"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
       <class name="com.boddess.testscript.PDP">
@@ -101,47 +64,25 @@
           <include name="social"/>
           <include name="wish"/>
           <include name="breadcrumbs_pdp"/>
+          <include name="prices_pdp"/>
           <include name="qty_addtoCart"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.PDP -->
     </classes>
   </test> <!-- PDP(failed) -->
   <test name="My Account(failed)">
     <classes>
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.Login_Reg">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
           <include name="ContactDetails"/>
-          <include name="endReport"/>
           <include name="ChangePassword"/>
           <include name="Newsletter"/>
           <include name="DefaultBillingAddress"/>
           <include name="DefaultShippingAddress"/>
           <include name="ManageAddressLink"/>
           <include name="report"/>
-          <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
     </classes>
   </test> <!-- My Account(failed) -->
 </suite> <!-- Failed suite [Suite] -->

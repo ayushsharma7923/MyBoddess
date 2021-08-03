@@ -731,9 +731,7 @@ public class Homepage extends Reporting
 			test=extent.createTest("Verify Banner and Carousal Dots displayed on Homepage");
 			WebDriverWait wait=new WebDriverWait(driver, 60);
 			try
-			{
-				
-				
+			{				
 				String ImageSliderXpath = PropReader.getProp("ImageSliderXpath");
 				String BannerCarXpath = PropReader.getProp("BannerCarXpath");
 
@@ -747,8 +745,6 @@ public class Homepage extends Reporting
 				error="Banner Carousal";
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(BannerCarXpath)));
 				Assert.assertTrue(driver.findElement(By.xpath(BannerCarXpath)).isDisplayed());
-
-				
 				
 			}
 			catch (AssertionError e) { 
