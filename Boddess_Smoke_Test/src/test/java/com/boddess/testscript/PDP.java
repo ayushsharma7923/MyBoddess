@@ -1,3 +1,4 @@
+
 package com.boddess.testscript;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,41 +18,15 @@ public class PDP extends Reporting
 	public void closeHomepgaePopUp(By by)
 	{
 		String NoThanksId = PropReader.getProp("NoThanksId");
-		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
 		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
 		wait(By.id(NoThanksId));
 		driver.findElement(By.id(NoThanksId)).click();
-		wait(By.xpath(SiteloadPopupCloseButtonXpath));
-		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
 		
 	}
 	
 	public void PDP_Navigation() throws InterruptedException
 	{
-		String CategoriesTopMenu = PropReader.getProp("CategoriesTopMenu");
-		String SkinCategory = PropReader.getProp("SkinCategory");
-		//String PLP_SkinBrightening = PropReader.getProp("PLP_SkinBrightening");
-		String prd = PropReader.getProp("prd");
-		
-		//Waiting for Top Category is displayed
-		wait(By.xpath(CategoriesTopMenu));
-		//Mouse hover on CategoriesTopMenu 
-		Mouseover(By.xpath(CategoriesTopMenu));
-		//Waiting for Top Category is displayed
-		wait(By.xpath(SkinCategory));
-		//Mouseover(By.xpath(SkinCategory));
-		//Clicking on Skin
-		//wait(By.xpath(PLP_SkinBrightening));
-		driver.findElement(By.xpath(SkinCategory)).click();
-		//Scrolldown until find the element
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		//This will scroll the page till the element is found		
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		wait(By.xpath(prd));
-		WebElement temp=driver.findElement(By.xpath(prd));
-        //Clicking on Product Name
-		Actions action = new Actions(driver);
-		action.moveToElement(temp).click(temp).build().perform();
+		driver.navigate().to("https://www.boddess.com/laneige-moist-cream-cleansers-150ml");
 		
 	}
 	
@@ -60,7 +35,6 @@ public class PDP extends Reporting
 	{
 		test=extent.createTest("Verifying item name displayed on PDP Page");
 		
-		//closeHomepgaePopUp(null);
 		
 		//Navigation to PDP
 		PDP_Navigation();
@@ -84,6 +58,7 @@ public class PDP extends Reporting
 	
 		String error = null;
 		try{
+			
 			String qty_listbox = PropReader.getProp("qty_listbox");
 			String addToBag_button = PropReader.getProp("addToBag_button");
 		//Verifying QTY box dates is displayed
@@ -108,6 +83,7 @@ public class PDP extends Reporting
 		
 		String error = null;
 		try{
+			
 			String facebook = PropReader.getProp("facebook");
 			String twitter = PropReader.getProp("twitter");
 		//verify on facebook icon
@@ -131,9 +107,10 @@ public class PDP extends Reporting
 	public void prices_pdp() throws InterruptedException
 	{
 		test=extent.createTest("Verifying Prices on PDP");
-		
+		String price = PropReader.getProp("price");
 		try{
-			String price = PropReader.getProp("price");
+		
+			
 		//Verifying defining attributes
 		Assert.assertTrue(driver.findElement(By.xpath(price)).isDisplayed());	
 		}
@@ -152,6 +129,7 @@ public class PDP extends Reporting
 		
 		try
 		{
+		
 			String wish = PropReader.getProp("wish");
 			//Verifying Wishlist icon is displayed
 			wait(By.xpath(wish));
@@ -171,7 +149,7 @@ public class PDP extends Reporting
 	
 		String error = null;
 		try {
-		
+			String price = PropReader.getProp("price");
 			String PDPItemImage = PropReader.getProp("PDPItemImage");
 		wait(By.xpath(PDPItemImage));
 		error = "Image not found on PDP";
@@ -193,6 +171,7 @@ public class PDP extends Reporting
 			
 			String error = null;
 			try {
+		
 		    String PincodeEdit = PropReader.getProp("PincodeEdit");
 		    String PincodeUpdate = PropReader.getProp("PincodeUpdate");
 		    String Pincodevalidation = PropReader.getProp("Pincodevalidation");
@@ -218,8 +197,6 @@ public class PDP extends Reporting
     @Test(priority = 8, description="PDP Page>> Test Case No. 8>> Verify Product Detail Section")
 			public void ProductDetailSection() throws InterruptedException
 			{	
-				//closeHomepgaePopUp(null);
-				//PDP_Navigation();
 				
 				test = extent.createTest("Verify product detail section");
 				String error = null;
@@ -227,6 +204,7 @@ public class PDP extends Reporting
 					String details_tab = PropReader.getProp("details_tab");
 					String reviews_tab = PropReader.getProp("reviews_tab");
 					String More_Information_tab = PropReader.getProp("More_Information_tab");
+					
 			    // verify details tab 
 				wait(By.xpath(details_tab));
 				error = details_tab;
@@ -250,8 +228,7 @@ public class PDP extends Reporting
 	@Test(priority = 9, description="PDP>>Test No.9 Verifying Breadcrumbs")
 	public void breadcrumbs_pdp() throws InterruptedException
 	{
-		//closeHomepgaePopUp(null);
-		//PDP_Navigation();
+
 		String error=null;
 		test=extent.createTest("Verifying Breadcrumbs");
 		try{
@@ -302,8 +279,7 @@ public class PDP extends Reporting
 			} catch (AssertionError e)
 			{
 				test.log(Status.FAIL, MarkupHelper.createLabel(error, ExtentColor.RED));
-			}	
-
+			}
 	}
 	
 }

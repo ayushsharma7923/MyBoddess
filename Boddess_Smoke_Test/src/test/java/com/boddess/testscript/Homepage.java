@@ -22,12 +22,10 @@ public class Homepage extends Reporting
 	public void closeHomepgaePopUp(By by)
 	{
 		String NoThanksId = PropReader.getProp("NoThanksId");
-		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
 		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
 		wait(By.id(NoThanksId));
 		driver.findElement(By.id(NoThanksId)).click();
-		wait(By.xpath(SiteloadPopupCloseButtonXpath));
-		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
+		
 	}
 	
 	@Test(priority = 1, description="Homepage>> Test Case No.1>> Verify Boddess logo on Homepage")
@@ -37,12 +35,9 @@ public class Homepage extends Reporting
 		String error = null;
 		try {
 		String NoThanksId = PropReader.getProp("NoThanksId");
-		String SiteloadPopupCloseButtonXpath = PropReader.getProp("SiteloadPopupCloseButtonXpath");
 		String SitelogoXpath = PropReader.getProp("SitelogoXpath");
 		wait(By.id(NoThanksId));
 		driver.findElement(By.id(NoThanksId)).click();
-		wait(By.xpath(SiteloadPopupCloseButtonXpath));
-		driver.findElement(By.xpath(SiteloadPopupCloseButtonXpath)).click();
 		wait(By.xpath(SitelogoXpath));
 		error = "Site logo";
 		Assert.assertTrue(driver.findElement(By.xpath(SitelogoXpath)).isDisplayed());
@@ -72,6 +67,7 @@ public class Homepage extends Reporting
 			String WishlistIcon= PropReader.getProp("WishlistIcon");
 			String CartIcon = PropReader.getProp("CartIcon");
 			String SignInIcon = PropReader.getProp("SignInIcon");
+			
 			
 		// Verifying Boddess Icons
 		error="Boddess Logo";
@@ -116,7 +112,7 @@ public class Homepage extends Reporting
 	
 		
 		@Test(priority = 3, description="Homepage>>Test Case No.3>> Verify category navigations")
-		public void cat_Navigation()
+		public void cat_Navigation() throws InterruptedException
 		{
 			String error=null;
 			
@@ -141,6 +137,8 @@ public class Homepage extends Reporting
 				String ToolsAccessorieshead = PropReader.getProp("ToolsAccessorieshead");
 				String GiftsCategory = PropReader.getProp("GiftsCategory");
 				String Giftshead = PropReader.getProp("Giftshead");
+				
+				
 				//Mouse hover on Apparel Category
 				error=CategoriesTopMenu;
 				Mouseover(By.xpath(CategoriesTopMenu));
@@ -149,75 +147,91 @@ public class Homepage extends Reporting
 				wait(By.xpath(SkinCategory));
 				//Navigation to Skin CLP page
 				driver.findElement(By.xpath(SkinCategory)).click();
+				Thread.sleep(2000);
 				//Verifying user is on Skin CLP page
 				wait(By.xpath(Skinhead));
 				//Verifying Makeup category is displayed 
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=MakeupCategory;
 				wait(By.xpath(MakeupCategory));
 				//Navigation to Makeup PLP page
 				driver.findElement(By.xpath(MakeupCategory)).click();
+				Thread.sleep(2000);
 				//Verifying user is on Makeup CLP page
 				wait(By.xpath(Makeuphead));
 				//Verifying Hair Category link is displayed 
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=HairCategory;
 				wait(By.xpath(HairCategory));
 				//Navigating to Hair PLP link is displayed
 				driver.findElement(By.xpath(HairCategory)).click();
+				Thread.sleep(2000);
 				error=HairHead;
 				//Verifying user in on Hair PLP page
 				wait(By.xpath(HairHead));
 				//Verifying Bath & Body link is displayed
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=BathBodyCategory;
 				wait(By.xpath(BathBodyCategory));
 				//Navigating to Skirts PLP on Products Category
 				driver.findElement(By.xpath(BathBodyCategory)).click();
+				Thread.sleep(2000);
 				//Verifying User is on Skirts PLP
 				error=BathBodyhead;
 				wait(By.xpath(BathBodyhead));
 				//Verifying Tops category are displayed
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=EssentialsCategory;
 				wait(By.xpath(EssentialsCategory));
 				//Navigating to Essentials PLP
 				driver.findElement(By.xpath(EssentialsCategory)).click();
+				Thread.sleep(2000);
 				//Verifying User is on Essentials PLP page
 				wait(By.xpath(Essentialshead));
 				//Verifying Fragrance Category  is displayed
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=FragranceCategory;
 				wait(By.xpath(FragranceCategory));
 				//Navigating to Boys PLP page 
 				driver.findElement(By.xpath(FragranceCategory)).click();
+				Thread.sleep(2000);
 				//Verifying Boys PLP page
 				wait(By.xpath(Fragrancehead));
 				// Verifying Tools Accessories Category  is displayed
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=ToolsAccessoriesCategory;
 				wait(By.xpath(ToolsAccessoriesCategory));
 				//Navigating to Tools Accessories Category
 				driver.findElement(By.xpath(ToolsAccessoriesCategory)).click();
+				Thread.sleep(2000);
 				//Verifying user is on Tools Accessories Category PLP page 
 				error=ToolsAccessorieshead;
 				wait(By.xpath(ToolsAccessorieshead));
 				//Verifying Gifts Category is displayed
 				error=CategoriesTopMenu;
+				
 				Mouseover(By.xpath(CategoriesTopMenu));
 				error=GiftsCategory;
 				wait(By.xpath(GiftsCategory));
 				//Navigating to Gifts Category PLP
 				driver.findElement(By.xpath(GiftsCategory)).click();
+				Thread.sleep(2000);
 				//Verifying Gifts Category PLP page
 				error=Giftshead;
 				wait(By.xpath(Giftshead));	
+			
 			}
 			catch(AssertionError e)
 			{

@@ -1,5 +1,6 @@
 package com.boddess.utilities;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.openqa.selenium.firefox.FirefoxDriver;
 import com.boddess.testscript.PropReader;
 
 public class Setup  {
@@ -17,8 +18,19 @@ public class Setup  {
 	
 	public void Start()
 	{
-		System.setProperty("webdriver.chrome.driver", "./Inputs/chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		
+		
+		/*
+		 * System.setProperty("webdriver.chrome.driver", "./Inputs/chromedriver.exe");
+		 * driver = new ChromeDriver();
+		 */
+		
+			
+			  System.setProperty("webdriver.gecko.driver", "./Inputs/geckodriver.exe");
+			  driver = new FirefoxDriver();
+			 
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
