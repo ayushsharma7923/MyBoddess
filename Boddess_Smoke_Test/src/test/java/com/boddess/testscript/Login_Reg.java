@@ -21,8 +21,6 @@ public class Login_Reg extends Reporting {
 		String SubmitLoginButton = PropReader.getProp("SubmitLoginButton");
 		String LogoutXpath = PropReader.getProp("LogoutXpath");	
 		String LoginIconXpathAfterLogin = PropReader.getProp("LoginIconXpathAfterLogin");	
-		
-		
 		wait(By.xpath(LoginIconXpath));
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
@@ -32,18 +30,9 @@ public class Login_Reg extends Reporting {
 		driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
 		driver.findElement(By.xpath(SubmitLoginButton)).click();
 		Thread.sleep(6000);
-		
 		wait(By.xpath(LoginIconXpathAfterLogin));
 		driver.findElement(By.xpath(LoginIconXpathAfterLogin)).click();
 		Thread.sleep(5000);
 		wait(By.linkText("Sign Out"));
-		
-		/*
-		 * try {
-		 * Assert.assertEquals(driver.findElement(By.xpath(LogoutXpath)).getText(),
-		 * "Sign Out"); } catch (AssertionError e) { test.log(Status.FAIL,
-		 * MarkupHelper.createLabel("User is not logged in as logout is not showing",
-		 * ExtentColor.RED)); }
-		 */
-	}
 }
+	}
