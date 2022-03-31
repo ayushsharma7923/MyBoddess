@@ -165,10 +165,9 @@ public class PDP extends Reporting
 	
 	@Test(priority = 7, description="PDP Page>> Test Case No. 7>> Pincode validation")
 		public void Pincode_Validation() throws InterruptedException
-		{
-			test = extent.createTest("Verify pincode");
-			
-			
+		{	
+		 
+			test = extent.createTest("Verify pincode");	
 			String error = null;
 			try {
 		
@@ -181,6 +180,7 @@ public class PDP extends Reporting
 			driver.findElement(By.xpath(PincodeEdit)).clear();
 			error = "not able to edit pincode";
 			driver.findElement(By.xpath(PincodeEdit)).sendKeys("123");
+			Thread.sleep(3000);
 			error = PincodeUpdate;
 			//driver.findElement(By.xpath(PincodeUpdate)).click();
 			wait(By.xpath(Pincodevalidation));
@@ -217,7 +217,7 @@ public class PDP extends Reporting
 				wait(By.xpath(More_Information_tab));
 				error = More_Information_tab;
 				Assert.assertEquals(driver.findElement(By.xpath(More_Information_tab)).getText(), "More Information");
-				
+	
 				
 					} catch (AssertionError e)
 					{
@@ -258,6 +258,7 @@ public class PDP extends Reporting
 	@Test(priority = 10, description="PDP Page>> Test Case No. 10>> Pincode validation check by correct pincode")
 	public void Pincode_Validation_correct() throws InterruptedException
 	{
+		
 		test = extent.createTest("Pincode validation check by correct pincode");
 		
 		String error = null;
