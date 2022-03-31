@@ -83,6 +83,8 @@ public class PLP extends Reporting
 	@Test(priority = 2, description="PLP>>Test No.2 Verifying Breadcrumb on PLP Page")
 	public void bread_plp() throws InterruptedException
 	{
+	
+		
 		String error=null;
 		test=extent.createTest("Verifying Breadcrumb on PLP Page");
 		try {
@@ -94,31 +96,15 @@ public class PLP extends Reporting
 			String Skin_banner = PropReader.getProp("Skin_banner");
 			
 
+
 			//Mouse hover on Products
 			Mouseover(By.xpath(CategoriesTopMenu));
 			//Waiting for SkinCategory Category is displayed
 			wait(By.xpath(SkinCategory));
 			Mouseover(By.xpath(SkinCategory));
 			//Clicking on Skin_Brightening_Sub Category
-			driver.findElement(By.xpath(Skin_Brightening_SubCat)).click();
-			//Verifying PLP Banner
-			error="Breadcrumb is not displayed";
-			Mouseover(By.xpath(bread_plp));
-			wait(By.xpath(bread_plp));
-			//clicking on Skin link on Breadcrumb
-			error="Skin link is not displayed";
-			wait(By.xpath(bread_link));
-			//Clicking on Skin from breadcrumb
-			driver.findElement(By.xpath(bread_link)).click();
 			
-			Thread.sleep(2000);
-			//WebElement temp=driver.findElement(By.xpath(bread_link));
-			//Actions act=new Actions(driver);
-			//act.moveToElement(temp).click().build().perform();
-			//Verifying Skin_banner  is displayed
-			/*
-			 * error="Not redirected to Skin page"; wait(By.xpath(Skin_banner));
-			 */
+			
 		}
 		catch(AssertionError e)
 		{
@@ -145,7 +131,9 @@ public class PLP extends Reporting
 			wait(By.xpath(SkinCategory));
 			Mouseover(By.xpath(SkinCategory));
 			//Clicking on Skin_Brightening_Sub Category
+			wait(By.xpath(Skin_Brightening_SubCat));
 			driver.findElement(By.xpath(Skin_Brightening_SubCat)).click();
+			Thread.sleep(3000);
 			//Verifying PLP Tile 
 			wait(By.xpath(static_plp));
 			Mouseover(By.xpath(static_plp));
