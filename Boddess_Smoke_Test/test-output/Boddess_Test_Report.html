@@ -33,7 +33,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -46,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 22, 2021 05:17:42 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 31, 2022 11:24:26 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +73,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +124,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='86.364%'><span class='strong'>19</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.636%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +139,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='76%'><span class='strong'>19</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='24%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -158,14 +160,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Boddess Logo is displaying</span>
-						<span class='test-time'>Nov 22, 2021 05:18:02 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:24:35 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:18:02 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:18:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+952ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:24:35 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:24:35 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+422ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,7 +181,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:18:03 PM</td>
+					<td class='timestamp'>11:24:35 AM</td>
 					<td class='step-details'><span class='label white-text green'>Homepage>> Test Case No.1>> Verify Boddess logo on Homepage</span></td>
 				</tr>
 			</tbody>
@@ -192,217 +194,13 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Boddess categories on Homepage</span>
-						<span class='test-time'>Nov 22, 2021 05:18:03 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:24:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:18:03 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:18:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+771ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:18:04 PM</td>
-					<td class='step-details'><span class='label white-text green'>Homepage>>Test Case No.2>> Verify Boddess categories on Homepage</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify category navigations</span>
-						<span class='test-time'>Nov 22, 2021 05:18:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:18:04 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:18:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+288ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:18:41 PM</td>
-					<td class='step-details'><span class='label white-text green'>Homepage>>Test Case No.3>> Verify category navigations</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify user is logged In</span>
-						<span class='test-time'>Nov 22, 2021 05:18:41 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:18:41 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:18:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+776ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:18:55 PM</td>
-					<td class='step-details'><span class='label white-text green'>Login and Reg>> Verify user is able to login</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>Verifying Breadcrumb on PLP Page</span>
-						<span class='test-time'>Nov 22, 2021 05:18:55 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:18:55 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+584ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:03 PM</td>
-					<td class='step-details'><span class='label white-text green'>PLP>>Test No.2 Verifying Breadcrumb on PLP Page</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>Verifying Static Text on PLP Page</span>
-						<span class='test-time'>Nov 22, 2021 05:19:03 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:03 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+889ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:06 PM</td>
-					<td class='step-details'><span class='label white-text green'>PLP>>Test No.4 Verifying Static Text on PLP Page</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>Verifying item name displayed on PDP Page</span>
-						<span class='test-time'>Nov 22, 2021 05:19:06 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:06 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+587ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:08 PM</td>
-					<td class='step-details'><span class='label white-text green'>PDP>>Test No.1 Verifying item name displayed on PDP Page</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>Verifying Quantity and Add to cart</span>
-						<span class='test-time'>Nov 22, 2021 05:19:08 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:08 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:08 PM</span>
+	<span class='label start-time'>Mar 31, 2022 11:24:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:24:36 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+293ms</span>
 </div>
 	<div class='test-steps'>
@@ -417,8 +215,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:08 PM</td>
-					<td class='step-details'><span class='label white-text green'>PDP>>Test No.2 Verifying Quantity and Add to cart</span></td>
+					<td class='timestamp'>11:24:36 AM</td>
+					<td class='step-details'><span class='label white-text green'>Homepage>>Test Case No.2>> Verify Boddess categories on Homepage</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -427,17 +225,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>Verifying Social Media icon displayed on PDP Page</span>
-						<span class='test-time'>Nov 22, 2021 05:19:08 PM</span>
+						<span class='test-name'>Verify category navigations</span>
+						<span class='test-time'>Mar 31, 2022 11:24:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:08 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+552ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:24:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:15 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 38s+779ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -451,8 +249,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:09 PM</td>
-					<td class='step-details'><span class='label white-text green'>PDP>>Test No.3 Verifying Social Media icon displayed on PDP Page</span></td>
+					<td class='timestamp'>11:25:15 AM</td>
+					<td class='step-details'><span class='label white-text green'>Homepage>>Test Case No.3>> Verify category navigations</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -461,17 +259,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>Verifying Prices on PDP</span>
-						<span class='test-time'>Nov 22, 2021 05:19:09 PM</span>
+						<span class='test-name'>Verify user is logged In</span>
+						<span class='test-time'>Mar 31, 2022 11:25:15 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+176ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:15 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+749ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -485,8 +283,8 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:09 PM</td>
-					<td class='step-details'><span class='label white-text green'>PDP>>Test No.4 Verifying Prices on PDP</span></td>
+					<td class='timestamp'>11:25:28 AM</td>
+					<td class='step-details'><span class='label white-text green'>Login and Reg>> Verify user is able to login</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -495,16 +293,216 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify add to Wishlist is displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:09 PM</span>
+						<span class='test-name'>Verifying Breadcrumb on PLP Page</span>
+						<span class='test-time'>Mar 31, 2022 11:25:28 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:28 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:29 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+325ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:25:29 AM</td>
+					<td class='step-details'><span class='label white-text red'>PLP>>Test No.2 Verifying Breadcrumb on PLP Page</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:25:29 AM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.bread_plp(PLP.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying Static Text on PLP Page</span>
+						<span class='test-time'>Mar 31, 2022 11:25:29 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:29 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:29 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+298ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:25:29 AM</td>
+					<td class='step-details'><span class='label white-text red'>PLP>>Test No.4 Verifying Static Text on PLP Page</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:25:29 AM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.static_plp(PLP.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying item name displayed on PDP Page</span>
+						<span class='test-time'>Mar 31, 2022 11:25:29 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:09 PM</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:29 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+792ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:25:33 AM</td>
+					<td class='step-details'><span class='label white-text green'>PDP>>Test No.1 Verifying item name displayed on PDP Page</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying Quantity and Add to cart</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+134ms</span>
 </div>
 	<div class='test-steps'>
@@ -519,7 +517,109 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:09 PM</td>
+					<td class='timestamp'>11:25:33 AM</td>
+					<td class='step-details'><span class='label white-text green'>PDP>>Test No.2 Verifying Quantity and Add to cart</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying Social Media icon displayed on PDP Page</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+116ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:25:33 AM</td>
+					<td class='step-details'><span class='label white-text green'>PDP>>Test No.3 Verifying Social Media icon displayed on PDP Page</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Verifying Prices on PDP</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+28ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:25:33 AM</td>
+					<td class='step-details'><span class='label white-text green'>PDP>>Test No.4 Verifying Prices on PDP</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify add to Wishlist is displayed</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+63ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:25:33 AM</td>
 					<td class='step-details'><span class='label white-text green'>PDP>>Test No.5>> Verify add to Wishlist is displayed</span></td>
 				</tr>
 			</tbody>
@@ -532,14 +632,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Product Image</span>
-						<span class='test-time'>Nov 22, 2021 05:19:09 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+39ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+66ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -553,7 +653,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:09 PM</td>
+					<td class='timestamp'>11:25:33 AM</td>
 					<td class='step-details'><span class='label white-text green'>PDP Page>> Test Case No.6>> Verify Product image displayed</span></td>
 				</tr>
 			</tbody>
@@ -566,14 +666,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify pincode</span>
-						<span class='test-time'>Nov 22, 2021 05:19:09 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+142ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+172ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -587,7 +687,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:09 PM</td>
+					<td class='timestamp'>11:25:33 AM</td>
 					<td class='step-details'><span class='label white-text green'>PDP Page>> Test Case No. 7>> Pincode validation</span></td>
 				</tr>
 			</tbody>
@@ -600,14 +700,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify product detail section</span>
-						<span class='test-time'>Nov 22, 2021 05:19:09 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:25:33 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:09 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+501ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:33 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+175ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -621,7 +721,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:10 PM</td>
+					<td class='timestamp'>11:25:34 AM</td>
 					<td class='step-details'><span class='label white-text green'>PDP Page>> Test Case No. 8>> Verify Product Detail Section</span></td>
 				</tr>
 			</tbody>
@@ -634,14 +734,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>Verifying Breadcrumbs</span>
-						<span class='test-time'>Nov 22, 2021 05:19:10 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:25:34 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+104ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:34 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:25:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+65ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -655,7 +755,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:10 PM</td>
+					<td class='timestamp'>11:25:34 AM</td>
 					<td class='step-details'><span class='label white-text green'>PDP>>Test No.9 Verifying Breadcrumbs</span></td>
 				</tr>
 			</tbody>
@@ -665,17 +765,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>Pincode validation check by correct pincode</span>
-						<span class='test-time'>Nov 22, 2021 05:19:10 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar 31, 2022 11:25:34 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+567ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:25:34 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 0s+122ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -687,10 +787,57 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:10 PM</td>
-					<td class='step-details'><span class='label white-text green'>PDP Page>> Test Case No. 10>> Pincode validation check by correct pincode</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:27:34 AM</td>
+					<td class='step-details'><span class='label white-text red'>PDP Page>> Test Case No. 10>> Pincode validation check by correct pincode</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>11:27:34 AM</td>
+					<td class='step-details'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	 (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.boddess.utilities.Setup.wait(Setup.java:56)
+	at com.boddess.testscript.PDP.Pincode_Validation_correct(PDP.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 26 more
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -702,14 +849,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if contact information is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:10 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:34 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:10 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+141ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:34 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+154ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -723,7 +870,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:13 PM</td>
+					<td class='timestamp'>11:27:36 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if contact information is being displayed</span></td>
 				</tr>
 			</tbody>
@@ -736,14 +883,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if change password and edit is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:13 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:13 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+342ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+283ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -757,7 +904,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:14 PM</td>
+					<td class='timestamp'>11:27:36 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if change password and edit is being displayed</span></td>
 				</tr>
 			</tbody>
@@ -770,14 +917,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if newsletter is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:14 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+200ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+124ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -791,7 +938,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:14 PM</td>
+					<td class='timestamp'>11:27:36 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if newsletter is being displayed</span></td>
 				</tr>
 			</tbody>
@@ -804,14 +951,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if default billing address is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:14 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+239ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+175ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -825,7 +972,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:14 PM</td>
+					<td class='timestamp'>11:27:36 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if default billing address are being displayed</span></td>
 				</tr>
 			</tbody>
@@ -838,14 +985,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if default shipping address is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:14 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+81ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:36 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:37 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+48ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -859,7 +1006,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:14 PM</td>
+					<td class='timestamp'>11:27:37 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if default shipping address is being displayed</span></td>
 				</tr>
 			</tbody>
@@ -872,14 +1019,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify if manage address link is being displayed</span>
-						<span class='test-time'>Nov 22, 2021 05:19:14 PM</span>
+						<span class='test-time'>Mar 31, 2022 11:27:37 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 22, 2021 05:19:14 PM</span>
-	<span class='label end-time'>Nov 22, 2021 05:19:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+185ms</span>
+	<span class='label start-time'>Mar 31, 2022 11:27:37 AM</span>
+	<span class='label end-time'>Mar 31, 2022 11:27:37 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+48ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -893,7 +1040,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:19:15 PM</td>
+					<td class='timestamp'>11:27:37 AM</td>
 					<td class='step-details'><span class='label white-text green'>My Account>> Test Case No.1>>Verify if manage address link is being displayed</span></td>
 				</tr>
 			</tbody>
@@ -927,6 +1074,228 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 31, 2022 11:25:28 AM</td>
+                                                        <td class='linked' test-id='5'>Verifying Breadcrumb on PLP Page</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.bread_plp(PLP.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mar 31, 2022 11:25:29 AM</td>
+                                                        <td class='linked' test-id='6'>Verifying Static Text on PLP Page</td>
+                                                        <td><pre><textarea>org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.static_plp(PLP.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 31, 2022 11:25:34 AM</td>
+                                                        <td class='linked' test-id='16'>Pincode validation check by correct pincode</td>
+                                                        <td><pre><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	 (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.boddess.utilities.Setup.wait(Setup.java:56)
+	at com.boddess.testscript.PDP.Pincode_Validation_correct(PDP.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 26 more
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -942,25 +1311,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>25</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 22, 2021 05:17:42 PM</div>
+					<div class='panel-lead'>Mar 31, 2022 11:24:26 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 22, 2021 05:19:15 PM</div>
+			 		<div class='panel-lead'>Mar 31, 2022 11:27:37 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 32s+471ms</div>
+					<div class='panel-lead'>0h 3m 10s+847ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1001,22 +1370,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 22,
-				failParent: 0,
+				passParent: 19,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 3,
 				
-				passChild: 22,
-				failChild: 0,
+				passChild: 19,
+				failChild: 6,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="22" passed="22" failed="0" skipped="0">
+<testng-results total="22" passed="19" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-22T11:48:02Z" name="Suite" finished-at="2021-11-22T11:49:15Z" duration-ms="72685">
+  <suite started-at="2022-03-31T05:54:35Z" name="Suite" finished-at="2022-03-31T05:57:37Z" duration-ms="181539">
     <groups>
     </groups>
-    <test started-at="2021-11-22T11:48:02Z" name="Homepage" finished-at="2021-11-22T11:48:41Z" duration-ms="39059">
+    <test started-at="2022-03-31T05:54:35Z" name="Homepage" finished-at="2022-03-31T05:55:15Z" duration-ms="39526">
       <class name="com.boddess.testscript.Homepage">
-        <test-method signature="Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:02Z" name="Header_Links" description="Homepage&gt;&gt; Test Case No.1&gt;&gt; Verify Boddess logo on Homepage" finished-at="2021-11-22T17:18:03Z" duration-ms="961" status="PASS">
+        <test-method signature="Header_Links()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:24:35Z" name="Header_Links" description="Homepage&gt;&gt; Test Case No.1&gt;&gt; Verify Boddess logo on Homepage" finished-at="2022-03-31T11:24:35Z" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Header_Links -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:03Z" name="getResult" finished-at="2021-11-22T17:18:03Z" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:24:35Z" name="getResult" finished-at="2022-03-31T11:24:35Z" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Header_Links1()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:03Z" name="Header_Links1" description="Homepage&gt;&gt;Test Case No.2&gt;&gt; Verify Boddess categories on Homepage" finished-at="2021-11-22T17:18:04Z" duration-ms="772" status="PASS">
+        <test-method signature="Header_Links1()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:24:35Z" name="Header_Links1" description="Homepage&gt;&gt;Test Case No.2&gt;&gt; Verify Boddess categories on Homepage" finished-at="2022-03-31T11:24:36Z" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Header_Links1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:04Z" name="getResult" finished-at="2021-11-22T17:18:04Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:24:36Z" name="getResult" finished-at="2022-03-31T11:24:36Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="cat_Navigation()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:04Z" name="cat_Navigation" description="Homepage&gt;&gt;Test Case No.3&gt;&gt; Verify category navigations" finished-at="2021-11-22T17:18:41Z" duration-ms="37288" status="PASS">
+        <test-method signature="cat_Navigation()[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:24:36Z" name="cat_Navigation" description="Homepage&gt;&gt;Test Case No.3&gt;&gt; Verify category navigations" finished-at="2022-03-31T11:25:15Z" duration-ms="38779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cat_Navigation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2021-11-22T17:18:41Z" name="getResult" finished-at="2021-11-22T17:18:41Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Homepage@69453e37]" started-at="2022-03-31T11:25:15Z" name="getResult" finished-at="2022-03-31T11:25:15Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,13 +54,13 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.boddess.testscript.Homepage -->
     </test> <!-- Homepage -->
-    <test started-at="2021-11-22T11:48:41Z" name="Login_Reg" finished-at="2021-11-22T11:48:55Z" duration-ms="13777">
+    <test started-at="2022-03-31T05:55:15Z" name="Login_Reg" finished-at="2022-03-31T05:55:28Z" duration-ms="13750">
       <class name="com.boddess.testscript.Login_Reg">
-        <test-method signature="Login()[pri:0, instance:com.boddess.testscript.Login_Reg@3af9c5b7]" started-at="2021-11-22T17:18:41Z" name="Login" description="Login and Reg&gt;&gt; Verify user is able to login" finished-at="2021-11-22T17:18:55Z" duration-ms="13775" status="PASS">
+        <test-method signature="Login()[pri:0, instance:com.boddess.testscript.Login_Reg@3af9c5b7]" started-at="2022-03-31T11:25:15Z" name="Login" description="Login and Reg&gt;&gt; Verify user is able to login" finished-at="2022-03-31T11:25:28Z" duration-ms="13748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Login_Reg@3af9c5b7]" started-at="2021-11-22T17:18:55Z" name="getResult" finished-at="2021-11-22T17:18:55Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.Login_Reg@3af9c5b7]" started-at="2022-03-31T11:25:28Z" name="getResult" finished-at="2022-03-31T11:25:28Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,32 +73,146 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.boddess.testscript.Login_Reg -->
     </test> <!-- Login_Reg -->
-    <test started-at="2021-11-22T11:48:55Z" name="PLP" finished-at="2021-11-22T11:49:06Z" duration-ms="11475">
+    <test started-at="2022-03-31T05:55:28Z" name="PLP" finished-at="2022-03-31T05:55:29Z" duration-ms="628">
       <class name="com.boddess.testscript.PLP">
-        <test-method signature="bread_plp()[pri:0, instance:com.boddess.testscript.PLP@63070bab]" started-at="2021-11-22T17:18:55Z" name="bread_plp" description="PLP&gt;&gt;Test No.2 Verifying Breadcrumb on PLP Page" finished-at="2021-11-22T17:19:03Z" duration-ms="8582" status="PASS">
+        <test-method signature="bread_plp()[pri:0, instance:com.boddess.testscript.PLP@68e5eea7]" started-at="2022-03-31T11:25:28Z" name="bread_plp" description="PLP&gt;&gt;Test No.2 Verifying Breadcrumb on PLP Page" finished-at="2022-03-31T11:25:29Z" duration-ms="322" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.bread_plp(PLP.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bread_plp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PLP@63070bab]" started-at="2021-11-22T17:19:03Z" name="getResult" finished-at="2021-11-22T17:19:03Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PLP@68e5eea7]" started-at="2022-03-31T11:25:29Z" name="getResult" finished-at="2022-03-31T11:25:29Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=bread_plp status=SUCCESS method=PLP.bread_plp()[pri:0, instance:com.boddess.testscript.PLP@63070bab] output={null}]]]>
+                <![CDATA[[TestResult name=bread_plp status=FAILURE method=PLP.bread_plp()[pri:0, instance:com.boddess.testscript.PLP@68e5eea7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="static_plp()[pri:0, instance:com.boddess.testscript.PLP@63070bab]" started-at="2021-11-22T17:19:03Z" name="static_plp" description="PLP&gt;&gt;Test No.4 Verifying Static Text on PLP Page" finished-at="2021-11-22T17:19:06Z" duration-ms="2889" status="PASS">
+        <test-method signature="static_plp()[pri:0, instance:com.boddess.testscript.PLP@68e5eea7]" started-at="2022-03-31T11:25:29Z" name="static_plp" description="PLP&gt;&gt;Test No.4 Verifying Static Text on PLP Page" finished-at="2022-03-31T11:25:29Z" duration-ms="296" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a id="ui-id-4" class="ui-corner-all" href="https://www.boddess.com/skin/shop-by-concern/skin-brightening"> could not be scrolled into view
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1380, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1ff7126c-294f-441d-8512-cf5a8e317032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PLP.static_plp(PLP.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- static_plp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PLP@63070bab]" started-at="2021-11-22T17:19:06Z" name="getResult" finished-at="2021-11-22T17:19:06Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PLP@68e5eea7]" started-at="2022-03-31T11:25:29Z" name="getResult" finished-at="2022-03-31T11:25:29Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=static_plp status=SUCCESS method=PLP.static_plp()[pri:0, instance:com.boddess.testscript.PLP@63070bab] output={null}]]]>
+                <![CDATA[[TestResult name=static_plp status=FAILURE method=PLP.static_plp()[pri:0, instance:com.boddess.testscript.PLP@68e5eea7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -107,152 +221,202 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.boddess.testscript.PLP -->
     </test> <!-- PLP -->
-    <test started-at="2021-11-22T11:49:06Z" name="PDP" finished-at="2021-11-22T11:49:10Z" duration-ms="4108">
+    <test started-at="2022-03-31T05:55:29Z" name="PDP" finished-at="2022-03-31T05:57:34Z" duration-ms="124746">
       <class name="com.boddess.testscript.PDP">
-        <test-method signature="prd_name()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:06Z" name="prd_name" description="PDP&gt;&gt;Test No.1 Verifying item name displayed on PDP Page" finished-at="2021-11-22T17:19:08Z" duration-ms="1587" status="PASS">
+        <test-method signature="prd_name()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:29Z" name="prd_name" description="PDP&gt;&gt;Test No.1 Verifying item name displayed on PDP Page" finished-at="2022-03-31T11:25:33Z" duration-ms="3791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prd_name -->
-        <test-method signature="qty_addtoCart()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:08Z" name="qty_addtoCart" description="PDP&gt;&gt;Test No.2 Verifying Quantity and Add to cart" finished-at="2021-11-22T17:19:08Z" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=prd_name status=SUCCESS method=PDP.prd_name()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="qty_addtoCart()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="qty_addtoCart" description="PDP&gt;&gt;Test No.2 Verifying Quantity and Add to cart" finished-at="2022-03-31T11:25:33Z" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- qty_addtoCart -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:08Z" name="getResult" finished-at="2021-11-22T17:19:08Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=prd_name status=SUCCESS method=PDP.prd_name()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:08Z" name="getResult" finished-at="2021-11-22T17:19:08Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=qty_addtoCart status=SUCCESS method=PDP.qty_addtoCart()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="social()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:08Z" name="social" description="PDP&gt;&gt;Test No.3 Verifying Social Media icon displayed on PDP Page" finished-at="2021-11-22T17:19:09Z" duration-ms="553" status="PASS">
+        <test-method signature="social()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="social" description="PDP&gt;&gt;Test No.3 Verifying Social Media icon displayed on PDP Page" finished-at="2022-03-31T11:25:33Z" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- social -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="getResult" finished-at="2021-11-22T17:19:09Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=social status=SUCCESS method=PDP.social()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=qty_addtoCart status=SUCCESS method=PDP.qty_addtoCart()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="prices_pdp()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="prices_pdp" description="PDP&gt;&gt;Test No.4 Verifying Prices on PDP" finished-at="2021-11-22T17:19:09Z" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=social status=SUCCESS method=PDP.social()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="prices_pdp()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="prices_pdp" description="PDP&gt;&gt;Test No.4 Verifying Prices on PDP" finished-at="2022-03-31T11:25:33Z" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prices_pdp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="getResult" finished-at="2021-11-22T17:19:09Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=prices_pdp status=SUCCESS method=PDP.prices_pdp()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=prices_pdp status=SUCCESS method=PDP.prices_pdp()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="wish()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="wish" description="PDP&gt;&gt;Test No.5&gt;&gt; Verify add to Wishlist is displayed" finished-at="2021-11-22T17:19:09Z" duration-ms="134" status="PASS">
+        <test-method signature="wish()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="wish" description="PDP&gt;&gt;Test No.5&gt;&gt; Verify add to Wishlist is displayed" finished-at="2022-03-31T11:25:33Z" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wish -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="getResult" finished-at="2021-11-22T17:19:09Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=wish status=SUCCESS method=PDP.wish()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method signature="Product_Image()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="Product_Image" description="PDP Page&gt;&gt; Test Case No.6&gt;&gt; Verify Product image displayed" finished-at="2021-11-22T17:19:09Z" duration-ms="38" status="PASS">
+        <test-method signature="Product_Image()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="Product_Image" description="PDP Page&gt;&gt; Test Case No.6&gt;&gt; Verify Product image displayed" finished-at="2022-03-31T11:25:33Z" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Product_Image -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="getResult" finished-at="2021-11-22T17:19:09Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Product_Image status=SUCCESS method=PDP.Product_Image()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=wish status=SUCCESS method=PDP.wish()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Pincode_Validation()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="Pincode_Validation" description="PDP Page&gt;&gt; Test Case No. 7&gt;&gt; Pincode validation" finished-at="2021-11-22T17:19:09Z" duration-ms="142" status="PASS">
+        <test-method signature="Pincode_Validation()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="Pincode_Validation" description="PDP Page&gt;&gt; Test Case No. 7&gt;&gt; Pincode validation" finished-at="2022-03-31T11:25:33Z" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Pincode_Validation -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="getResult" finished-at="2021-11-22T17:19:09Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Pincode_Validation status=SUCCESS method=PDP.Pincode_Validation()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=Product_Image status=SUCCESS method=PDP.Product_Image()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ProductDetailSection()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:09Z" name="ProductDetailSection" description="PDP Page&gt;&gt; Test Case No. 8&gt;&gt; Verify Product Detail Section" finished-at="2021-11-22T17:19:10Z" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="getResult" finished-at="2022-03-31T11:25:33Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Pincode_Validation status=SUCCESS method=PDP.Pincode_Validation()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ProductDetailSection()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:33Z" name="ProductDetailSection" description="PDP Page&gt;&gt; Test Case No. 8&gt;&gt; Verify Product Detail Section" finished-at="2022-03-31T11:25:34Z" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductDetailSection -->
-        <test-method signature="breadcrumbs_pdp()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:10Z" name="breadcrumbs_pdp" description="PDP&gt;&gt;Test No.9 Verifying Breadcrumbs" finished-at="2021-11-22T17:19:10Z" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:34Z" name="getResult" finished-at="2022-03-31T11:25:34Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ProductDetailSection status=SUCCESS method=PDP.ProductDetailSection()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="breadcrumbs_pdp()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:34Z" name="breadcrumbs_pdp" description="PDP&gt;&gt;Test No.9 Verifying Breadcrumbs" finished-at="2022-03-31T11:25:34Z" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- breadcrumbs_pdp -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:10Z" name="getResult" finished-at="2021-11-22T17:19:10Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:34Z" name="getResult" finished-at="2022-03-31T11:25:34Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ProductDetailSection status=SUCCESS method=PDP.ProductDetailSection()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=breadcrumbs_pdp status=SUCCESS method=PDP.breadcrumbs_pdp()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Pincode_Validation_correct()[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:10Z" name="Pincode_Validation_correct" description="PDP Page&gt;&gt; Test Case No. 10&gt;&gt; Pincode validation check by correct pincode" finished-at="2021-11-22T17:19:10Z" duration-ms="567" status="PASS">
+        <test-method signature="Pincode_Validation_correct()[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:25:34Z" name="Pincode_Validation_correct" description="PDP Page&gt;&gt; Test Case No. 10&gt;&gt; Pincode validation check by correct pincode" finished-at="2022-03-31T11:27:34Z" duration-ms="120121" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	 (tried for 120 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	 (tried for 120 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at com.boddess.utilities.Setup.wait(Setup.java:56)
+	at com.boddess.testscript.PDP.Pincode_Validation_correct(PDP.java:274)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@id="pincode-search-form"]/fieldset/div/div[2]/div/span/div/span	
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Pincode_Validation_correct -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:10Z" name="getResult" finished-at="2021-11-22T17:19:10Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@6ff29830]" started-at="2022-03-31T11:27:34Z" name="getResult" finished-at="2022-03-31T11:27:34Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=breadcrumbs_pdp status=SUCCESS method=PDP.breadcrumbs_pdp()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.PDP@2638011]" started-at="2021-11-22T17:19:10Z" name="getResult" finished-at="2021-11-22T17:19:10Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Pincode_Validation_correct status=SUCCESS method=PDP.Pincode_Validation_correct()[pri:0, instance:com.boddess.testscript.PDP@2638011] output={null}]]]>
+                <![CDATA[[TestResult name=Pincode_Validation_correct status=FAILURE method=PDP.Pincode_Validation_correct()[pri:0, instance:com.boddess.testscript.PDP@6ff29830] output={null}]]]>
               </value>
             </param>
           </params>
@@ -261,103 +425,103 @@
         </test-method> <!-- getResult -->
       </class> <!-- com.boddess.testscript.PDP -->
     </test> <!-- PDP -->
-    <test started-at="2021-11-22T11:49:10Z" name="My Account" finished-at="2021-11-22T11:49:15Z" duration-ms="4194">
+    <test started-at="2022-03-31T05:57:34Z" name="My Account" finished-at="2022-03-31T05:57:37Z" duration-ms="2840">
       <class name="com.boddess.testscript.MyAccount">
-        <test-method is-config="true" signature="report()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:17:42Z" name="report" finished-at="2021-11-22T17:18:02Z" duration-ms="19858" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:24:26Z" name="report" finished-at="2022-03-31T11:24:35Z" duration-ms="9430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method signature="ContactDetails()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:10Z" name="ContactDetails" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if contact information is being displayed" finished-at="2021-11-22T17:19:13Z" duration-ms="3139" status="PASS">
+        <test-method signature="ContactDetails()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:34Z" name="ContactDetails" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if contact information is being displayed" finished-at="2022-03-31T11:27:36Z" duration-ms="2153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ContactDetails -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:13Z" name="getResult" finished-at="2021-11-22T17:19:13Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="getResult" finished-at="2022-03-31T11:27:36Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ContactDetails status=SUCCESS method=MyAccount.ContactDetails()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
+                <![CDATA[[TestResult name=ContactDetails status=SUCCESS method=MyAccount.ContactDetails()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ChangePassword()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:13Z" name="ChangePassword" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if change password and edit is being displayed" finished-at="2021-11-22T17:19:14Z" duration-ms="342" status="PASS">
+        <test-method signature="ChangePassword()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="ChangePassword" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if change password and edit is being displayed" finished-at="2022-03-31T11:27:36Z" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChangePassword -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="getResult" finished-at="2021-11-22T17:19:14Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="getResult" finished-at="2022-03-31T11:27:36Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangePassword status=SUCCESS method=MyAccount.ChangePassword()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
+                <![CDATA[[TestResult name=ChangePassword status=SUCCESS method=MyAccount.ChangePassword()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="Newsletter()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="Newsletter" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if newsletter is being displayed" finished-at="2021-11-22T17:19:14Z" duration-ms="200" status="PASS">
+        <test-method signature="Newsletter()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="Newsletter" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if newsletter is being displayed" finished-at="2022-03-31T11:27:36Z" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Newsletter -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="getResult" finished-at="2021-11-22T17:19:14Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="getResult" finished-at="2022-03-31T11:27:36Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Newsletter status=SUCCESS method=MyAccount.Newsletter()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
+                <![CDATA[[TestResult name=Newsletter status=SUCCESS method=MyAccount.Newsletter()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="DefaultBillingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="DefaultBillingAddress" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if default billing address are being displayed" finished-at="2021-11-22T17:19:14Z" duration-ms="240" status="PASS">
+        <test-method signature="DefaultBillingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="DefaultBillingAddress" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if default billing address are being displayed" finished-at="2022-03-31T11:27:36Z" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultBillingAddress -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="getResult" finished-at="2021-11-22T17:19:14Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="getResult" finished-at="2022-03-31T11:27:36Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DefaultBillingAddress status=SUCCESS method=MyAccount.DefaultBillingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
+                <![CDATA[[TestResult name=DefaultBillingAddress status=SUCCESS method=MyAccount.DefaultBillingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="DefaultShippingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="DefaultShippingAddress" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if default shipping address is being displayed" finished-at="2021-11-22T17:19:14Z" duration-ms="80" status="PASS">
+        <test-method signature="DefaultShippingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:36Z" name="DefaultShippingAddress" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if default shipping address is being displayed" finished-at="2022-03-31T11:27:37Z" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DefaultShippingAddress -->
-        <test-method signature="ManageAddressLink()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="ManageAddressLink" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if manage address link is being displayed" finished-at="2021-11-22T17:19:15Z" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:37Z" name="getResult" finished-at="2022-03-31T11:27:37Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DefaultShippingAddress status=SUCCESS method=MyAccount.DefaultShippingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ManageAddressLink()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:37Z" name="ManageAddressLink" description="My Account&gt;&gt; Test Case No.1&gt;&gt;Verify if manage address link is being displayed" finished-at="2022-03-31T11:27:37Z" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ManageAddressLink -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:14Z" name="getResult" finished-at="2021-11-22T17:19:14Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:37Z" name="getResult" finished-at="2022-03-31T11:27:37Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DefaultShippingAddress status=SUCCESS method=MyAccount.DefaultShippingAddress()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
+                <![CDATA[[TestResult name=ManageAddressLink status=SUCCESS method=MyAccount.ManageAddressLink()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:15Z" name="getResult" finished-at="2021-11-22T17:19:15Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ManageAddressLink status=SUCCESS method=MyAccount.ManageAddressLink()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.boddess.testscript.MyAccount@17a7f733]" started-at="2021-11-22T17:19:15Z" name="endReport" finished-at="2021-11-22T17:19:16Z" duration-ms="1746" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.boddess.testscript.MyAccount@68567e20]" started-at="2022-03-31T11:27:37Z" name="endReport" finished-at="2022-03-31T11:27:40Z" duration-ms="3178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
