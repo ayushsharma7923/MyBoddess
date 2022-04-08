@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods, 1 failed,   21 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.boddess.testscript.PLP" class="method navigator-link" hash-for-method="static_plp">static_plp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">22 methods,   22 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -215,6 +201,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.boddess.testscript.PLP" class="method navigator-link" hash-for-method="static_plp">static_plp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.boddess.testscript.PDP" class="method navigator-link" hash-for-method="wish">wish</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -230,69 +221,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.boddess.testscript.PLP</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="static_plp">
-                  </a> <!-- static_plp -->
-                  <span class="method-name">static_plp</span>
-                  <div class="stack-trace"><b>"org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id=&apos;ui-id-4&apos;] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;AYUSH-HOB&apos;, ip: &apos;172.17.42.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18748, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 15815a83-483f-471f-9ddb-a7f72edbe7f8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PLP.static_plp(PLP.java:134)
-... Removed 24 stack frames<br/> org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id=&apos;ui-id-4&apos;] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;AYUSH-HOB&apos;, ip: &apos;172.17.42.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18748, moz:profile: C:\Users\ayush.sharma\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 15815a83-483f-471f-9ddb-a7f72edbe7f8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PLP.static_plp(PLP.java:134)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-"</b><br>org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)<br>org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)<br>com.boddess.utilities.Setup.wait(Setup.java:56)<br>com.boddess.testscript.PLP.static_plp(PLP.java:134)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:567)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
-</div> <!-- stack-trace -->
-                  <em>
-(PLP>>Test No.4 Verifying Static Text on PLP Page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -458,6 +386,15 @@ Session ID: 15815a83-483f-471f-9ddb-a7f72edbe7f8
 (PLP>>Test No.2 Verifying Breadcrumb on PLP Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="static_plp">
+                  </a> <!-- static_plp -->
+                  <span class="method-name">static_plp</span>
+                  <em>
+(PLP>>Test No.4 Verifying Static Text on PLP Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -608,85 +545,85 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(22);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'static_plp')
-data.setCell(0, 2, 'com.boddess.testscript.PLP')
-data.setCell(0, 3, 120502);
+data.setCell(0, 1, 'cat_Navigation')
+data.setCell(0, 2, 'com.boddess.testscript.Homepage')
+data.setCell(0, 3, 54683);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'cat_Navigation')
-data.setCell(1, 2, 'com.boddess.testscript.Homepage')
-data.setCell(1, 3, 64056);
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'com.boddess.testscript.Login_Reg')
+data.setCell(1, 3, 12948);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Login')
-data.setCell(2, 2, 'com.boddess.testscript.Login_Reg')
-data.setCell(2, 3, 13867);
+data.setCell(2, 1, 'static_plp')
+data.setCell(2, 2, 'com.boddess.testscript.PLP')
+data.setCell(2, 3, 9734);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'prd_name')
 data.setCell(3, 2, 'com.boddess.testscript.PDP')
-data.setCell(3, 3, 5338);
+data.setCell(3, 3, 8529);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Pincode_Validation')
-data.setCell(4, 2, 'com.boddess.testscript.PDP')
-data.setCell(4, 3, 3109);
+data.setCell(4, 1, 'ContactDetails')
+data.setCell(4, 2, 'com.boddess.testscript.MyAccount')
+data.setCell(4, 3, 7371);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ContactDetails')
-data.setCell(5, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(5, 3, 2374);
+data.setCell(5, 1, 'Pincode_Validation')
+data.setCell(5, 2, 'com.boddess.testscript.PDP')
+data.setCell(5, 3, 3106);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'Pincode_Validation_correct')
 data.setCell(6, 2, 'com.boddess.testscript.PDP')
-data.setCell(6, 3, 579);
+data.setCell(6, 3, 729);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'Header_Links')
 data.setCell(7, 2, 'com.boddess.testscript.Homepage')
-data.setCell(7, 3, 427);
+data.setCell(7, 3, 545);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'bread_plp')
-data.setCell(8, 2, 'com.boddess.testscript.PLP')
-data.setCell(8, 3, 369);
+data.setCell(8, 1, 'Header_Links1')
+data.setCell(8, 2, 'com.boddess.testscript.Homepage')
+data.setCell(8, 3, 361);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'ChangePassword')
-data.setCell(9, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(9, 3, 357);
+data.setCell(9, 1, 'bread_plp')
+data.setCell(9, 2, 'com.boddess.testscript.PLP')
+data.setCell(9, 3, 300);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Header_Links1')
-data.setCell(10, 2, 'com.boddess.testscript.Homepage')
-data.setCell(10, 3, 256);
+data.setCell(10, 1, 'ChangePassword')
+data.setCell(10, 2, 'com.boddess.testscript.MyAccount')
+data.setCell(10, 3, 299);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'social')
 data.setCell(11, 2, 'com.boddess.testscript.PDP')
-data.setCell(11, 3, 131);
+data.setCell(11, 3, 111);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'DefaultBillingAddress')
+data.setCell(12, 1, 'ManageAddressLink')
 data.setCell(12, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(12, 3, 122);
+data.setCell(12, 3, 111);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'qty_addtoCart')
 data.setCell(13, 2, 'com.boddess.testscript.PDP')
-data.setCell(13, 3, 116);
+data.setCell(13, 3, 109);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'ProductDetailSection')
 data.setCell(14, 2, 'com.boddess.testscript.PDP')
-data.setCell(14, 3, 79);
+data.setCell(14, 3, 86);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'Newsletter')
 data.setCell(15, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(15, 3, 76);
+data.setCell(15, 3, 72);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'wish')
 data.setCell(16, 2, 'com.boddess.testscript.PDP')
-data.setCell(16, 3, 70);
+data.setCell(16, 3, 52);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'DefaultShippingAddress')
 data.setCell(17, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(17, 3, 65);
+data.setCell(17, 3, 48);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'Product_Image')
-data.setCell(18, 2, 'com.boddess.testscript.PDP')
-data.setCell(18, 3, 58);
+data.setCell(18, 1, 'DefaultBillingAddress')
+data.setCell(18, 2, 'com.boddess.testscript.MyAccount')
+data.setCell(18, 3, 45);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'ManageAddressLink')
-data.setCell(19, 2, 'com.boddess.testscript.MyAccount')
-data.setCell(19, 3, 38);
+data.setCell(19, 1, 'Product_Image')
+data.setCell(19, 2, 'com.boddess.testscript.PDP')
+data.setCell(19, 3, 43);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'breadcrumbs_pdp')
 data.setCell(20, 2, 'com.boddess.testscript.PDP')
@@ -694,12 +631,12 @@ data.setCell(20, 3, 36);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'prices_pdp')
 data.setCell(21, 2, 'com.boddess.testscript.PDP')
-data.setCell(21, 3, 27);
+data.setCell(21, 3, 29);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -735,197 +672,195 @@ return data;
               <div class="chronological-class-name">com.boddess.testscript.Homepage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Header_Links</span>
-                <span class="method-start">9289 ms</span>
+                <span class="method-start">25996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Header_Links status=SUCCESS method=Homepage.Header_Links()[pri:0, instance:com.bodd...)</span>
-                <span class="method-start">9717 ms</span>
+                <span class="method-start">26542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Header_Links1</span>
-                <span class="method-start">9725 ms</span>
+                <span class="method-start">26548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Header_Links1 status=SUCCESS method=Homepage.Header_Links1()[pri:0, instance:com.bo...)</span>
-                <span class="method-start">9982 ms</span>
+                <span class="method-start">26909 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">cat_Navigation</span>
-                <span class="method-start">9983 ms</span>
+                <span class="method-start">26910 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=cat_Navigation status=SUCCESS method=Homepage.cat_Navigation()[pri:0, instance:com....)</span>
-                <span class="method-start">74039 ms</span>
+                <span class="method-start">81595 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.boddess.testscript.Login_Reg</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">74071 ms</span>
+                <span class="method-start">81645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Login status=SUCCESS method=Login_Reg.Login()[pri:0, instance:com.boddess.testscrip...)</span>
-                <span class="method-start">87939 ms</span>
+                <span class="method-start">94594 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.boddess.testscript.PLP</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bread_plp</span>
-                <span class="method-start">87951 ms</span>
+                <span class="method-start">94601 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=bread_plp status=SUCCESS method=PLP.bread_plp()[pri:0, instance:com.boddess.testscr...)</span>
-                <span class="method-start">88321 ms</span>
+                <span class="method-start">94901 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">static_plp</span>
-                <span class="method-start">88321 ms</span>
+                <span class="method-start">94902 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=static_plp status=FAILURE method=PLP.static_plp()[pri:0, instance:com.boddess.tests...)</span>
-                <span class="method-start">208824 ms</span>
+                <span class="method-name">getResult([TestResult name=static_plp status=SUCCESS method=PLP.static_plp()[pri:0, instance:com.boddess.tests...)</span>
+                <span class="method-start">104637 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.boddess.testscript.PDP</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">prd_name</span>
-                <span class="method-start">208839 ms</span>
+                <span class="method-start">104648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=prd_name status=SUCCESS method=PDP.prd_name()[pri:0, instance:com.boddess.testscrip...)</span>
-                <span class="method-start">214177 ms</span>
+                <span class="method-start">113178 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">qty_addtoCart</span>
-                <span class="method-start">214178 ms</span>
+                <span class="method-start">113178 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=qty_addtoCart status=SUCCESS method=PDP.qty_addtoCart()[pri:0, instance:com.boddess...)</span>
-                <span class="method-start">214294 ms</span>
+                <span class="method-start">113287 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">social</span>
-                <span class="method-start">214295 ms</span>
+                <span class="method-start">113288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=social status=SUCCESS method=PDP.social()[pri:0, instance:com.boddess.testscript.PD...)</span>
-                <span class="method-start">214426 ms</span>
+                <span class="method-start">113399 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">prices_pdp</span>
-                <span class="method-start">214427 ms</span>
+                <span class="method-start">113400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=prices_pdp status=SUCCESS method=PDP.prices_pdp()[pri:0, instance:com.boddess.tests...)</span>
-                <span class="method-start">214455 ms</span>
+                <span class="method-start">113429 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">wish</span>
-                <span class="method-start">214456 ms</span>
+                <span class="method-start">113430 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=wish status=SUCCESS method=PDP.wish()[pri:0, instance:com.boddess.testscript.PDP@6f...)</span>
-                <span class="method-start">214527 ms</span>
+                <span class="method-start">113483 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Product_Image</span>
-                <span class="method-start">214527 ms</span>
+                <span class="method-start">113483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Product_Image status=SUCCESS method=PDP.Product_Image()[pri:0, instance:com.boddess...)</span>
-                <span class="method-start">214585 ms</span>
+                <span class="method-start">113527 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Pincode_Validation</span>
-                <span class="method-start">214585 ms</span>
+                <span class="method-start">113527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Pincode_Validation status=SUCCESS method=PDP.Pincode_Validation()[pri:0, instance:c...)</span>
-                <span class="method-start">217694 ms</span>
+                <span class="method-start">116633 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ProductDetailSection</span>
-                <span class="method-start">217695 ms</span>
+                <span class="method-start">116634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ProductDetailSection status=SUCCESS method=PDP.ProductDetailSection()[pri:0, instan...)</span>
-                <span class="method-start">217774 ms</span>
+                <span class="method-start">116721 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">breadcrumbs_pdp</span>
-                <span class="method-start">217774 ms</span>
+                <span class="method-start">116721 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=breadcrumbs_pdp status=SUCCESS method=PDP.breadcrumbs_pdp()[pri:0, instance:com.bod...)</span>
-                <span class="method-start">217810 ms</span>
+                <span class="method-start">116757 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Pincode_Validation_correct</span>
-                <span class="method-start">217811 ms</span>
+                <span class="method-start">116758 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Pincode_Validation_correct status=SUCCESS method=PDP.Pincode_Validation_correct()[p...)</span>
-                <span class="method-start">218391 ms</span>
+                <span class="method-start">117488 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.boddess.testscript.MyAccount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ContactDetails</span>
-                <span class="method-start">218398 ms</span>
+                <span class="method-start">117497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ContactDetails status=SUCCESS method=MyAccount.ContactDetails()[pri:0, instance:com...)</span>
-                <span class="method-start">220773 ms</span>
+                <span class="method-start">124869 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ChangePassword</span>
-                <span class="method-start">220774 ms</span>
+                <span class="method-start">124869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ChangePassword status=SUCCESS method=MyAccount.ChangePassword()[pri:0, instance:com...)</span>
-                <span class="method-start">221132 ms</span>
+                <span class="method-start">125168 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Newsletter</span>
-                <span class="method-start">221132 ms</span>
+                <span class="method-start">125168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=Newsletter status=SUCCESS method=MyAccount.Newsletter()[pri:0, instance:com.boddess...)</span>
-                <span class="method-start">221208 ms</span>
+                <span class="method-start">125240 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">DefaultBillingAddress</span>
-                <span class="method-start">221209 ms</span>
+                <span class="method-start">125240 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=DefaultBillingAddress status=SUCCESS method=MyAccount.DefaultBillingAddress()[pri:0...)</span>
-                <span class="method-start">221331 ms</span>
+                <span class="method-start">125285 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">DefaultShippingAddress</span>
-                <span class="method-start">221332 ms</span>
+                <span class="method-start">125286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=DefaultShippingAddress status=SUCCESS method=MyAccount.DefaultShippingAddress()[pri...)</span>
-                <span class="method-start">221398 ms</span>
+                <span class="method-start">125334 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ManageAddressLink</span>
-                <span class="method-start">221398 ms</span>
+                <span class="method-start">125334 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ManageAddressLink status=SUCCESS method=MyAccount.ManageAddressLink()[pri:0, instan...)</span>
-                <span class="method-start">221436 ms</span>
+                <span class="method-start">125445 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">221443 ms</span>
+                <span class="method-start">125454 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

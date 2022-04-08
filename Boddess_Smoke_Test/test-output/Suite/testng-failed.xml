@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <test name="PLP(failed)">
+  <test name="Login_Reg(failed)">
     <classes>
       <class name="com.boddess.testscript.Homepage">
         <methods>
@@ -15,15 +15,10 @@
       </class> <!-- com.boddess.testscript.PDP -->
       <class name="com.boddess.testscript.Login_Reg">
         <methods>
+          <include name="Login"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PLP">
-        <methods>
-          <include name="static_plp"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PLP -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
           <include name="endReport"/>
@@ -31,6 +26,11 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
     </classes>
-  </test> <!-- PLP(failed) -->
+  </test> <!-- Login_Reg(failed) -->
 </suite> <!-- Failed suite [Suite] -->

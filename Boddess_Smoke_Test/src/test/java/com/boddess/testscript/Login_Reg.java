@@ -33,6 +33,6 @@ public class Login_Reg extends Reporting {
 		wait(By.xpath(LoginIconXpathAfterLogin));
 		driver.findElement(By.xpath(LoginIconXpathAfterLogin)).click();
 		Thread.sleep(5000);
-		wait(By.linkText("Sign Out"));
+		wait(By.xpath(LogoutXpath));
 }
 	}
