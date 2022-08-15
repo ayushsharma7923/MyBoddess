@@ -3,14 +3,14 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.boddess.testscript.PDP">
+      <class name="com.boddess.testscript.PLP">
         <methods>
-          <include name="Pincode_Validation_correct"/>
           <include name="endReport"/>
+          <include name="static_plp"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
+      </class> <!-- com.boddess.testscript.PLP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

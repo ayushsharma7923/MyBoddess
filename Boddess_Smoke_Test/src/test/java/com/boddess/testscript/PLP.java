@@ -120,7 +120,7 @@ public class PLP extends Reporting
 		
 		try {
 			String CategoriesTopMenu  = PropReader.getProp("CategoriesTopMenu");
-			String Skin_Brightening_SubCat = PropReader.getProp("Skin_Brightening_SubCat");
+			String Face_Wash_SubCat = PropReader.getProp("Face_Wash_SubCat");
 			String SkinCategory = PropReader.getProp("SkinCategory");
 			String static_plp = PropReader.getProp("static_plp");
 			
@@ -131,8 +131,8 @@ public class PLP extends Reporting
 			wait(By.xpath(SkinCategory));
 			Mouseover(By.xpath(SkinCategory));
 			//Clicking on Skin_Brightening_Sub Category
-			wait(By.xpath(Skin_Brightening_SubCat));
-			driver.findElement(By.xpath(Skin_Brightening_SubCat)).click();
+			wait(By.xpath(Face_Wash_SubCat));
+			driver.findElement(By.xpath(Face_Wash_SubCat)).click();
 			Thread.sleep(3000);
 			//Verifying PLP Tile 
 			wait(By.xpath(static_plp));
