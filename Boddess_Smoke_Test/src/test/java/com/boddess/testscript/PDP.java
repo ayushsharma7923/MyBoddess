@@ -214,9 +214,11 @@ public class PDP extends Reporting
 				error = reviews_tab;
 				Assert.assertEquals(driver.findElement(By.xpath(reviews_tab)).getText(), "Reviews");
 				  // verify Questions tab 
-				wait(By.xpath(More_Information_tab));
-				error = More_Information_tab;
-				Assert.assertEquals(driver.findElement(By.xpath(More_Information_tab)).getText(), "More Information");
+					/*
+					 * wait(By.xpath(More_Information_tab)); error = More_Information_tab;
+					 * Assert.assertEquals(driver.findElement(By.xpath(More_Information_tab)).
+					 * getText(), "More Information");
+					 */
 	
 				
 					} catch (AssertionError e)
