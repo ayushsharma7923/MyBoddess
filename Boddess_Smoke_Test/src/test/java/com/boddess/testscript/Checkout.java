@@ -1,6 +1,7 @@
 package com.boddess.testscript;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -21,7 +22,6 @@ public class Checkout extends Reporting {
 		test = extent.createTest("Verify navigation to cart page and COD payment");
 		String error = null;
 		String CartURL = "https://www.boddess.com/checkout/cart/";
-		String ContinueButtonCart = PropReader.getProp("ContinueButtonCart");
 		String NoThanksId = PropReader.getProp("NoThanksId");
 		String AddToBagHomepage = PropReader.getProp("AddToBagHomepage");
 		String BagIconXpath = PropReader.getProp("BagIconXpath");
@@ -36,9 +36,10 @@ public class Checkout extends Reporting {
 		String CashOnDelivery = PropReader.getProp("CashOnDelivery");
 		String SendOTPbutton = PropReader.getProp("SendOTPbutton");
 		String OTPsentSuccesssfulyMSG = PropReader.getProp("OTPsentSuccesssfulyMSG");
+		String ContinueButtonCart= PropReader.getProp("ContinueButtonCart");
 		
 		
-		  wait(By.id(NoThanksId)); driver.findElement(By.id(NoThanksId)).click();
+		  //wait(By.id(NoThanksId)); driver.findElement(By.id(NoThanksId)).click();
 		 
 		
 		// Adding item to cart from homepage
@@ -53,18 +54,17 @@ public class Checkout extends Reporting {
 		wait(By.xpath(ProceedButtonMiniCart));
 		// clicking on proceed button on mini cart
 		driver.findElement(By.xpath(ProceedButtonMiniCart)).click();
-
-		Thread.sleep(5000);
-
+		Thread.sleep(500);
+	
+		wait(By.xpath(ContinueButtonCart));
+		driver.findElement(By.xpath(ContinueButtonCart)).click();
+		
 		/*
 		 * error = "Cart navigation"; Assert.assertEquals(CartURL,
 		 * "https://www.boddess.com/checkout/cart/"); Thread.sleep(8000);
 		 */
 		
-		wait(By.xpath(ContinueButtonCart));
-		driver.findElement(By.xpath(ContinueButtonCart)).click();
-		Thread.sleep(8000);
-
+	
 		wait(By.xpath(EmailForLogin));
 		driver.findElement(By.xpath(EmailForLogin)).sendKeys("boddesstest@gmail.com");
 		Thread.sleep(500);

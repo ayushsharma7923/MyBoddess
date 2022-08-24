@@ -22,21 +22,15 @@
 	<class name="com.boddess.testscript.PDP" />
 	</classes>
 	</test>
-<!--	<test name="Static Pages">
-	<classes>
-	<class name="com.testscript.oslo.Static_Pages" />
-	</classes> 
-</test>-->
 	<test name="My Account">
 	<classes>
 	<class name="com.boddess.testscript.MyAccount" />
 	</classes>
     </test>
-<!--<test name="Checkout">	
+	<test name="LoginCheckout">
 	<classes>
-	<class name="com.testscript.oslo.Checkout" />
+	<class name="com.boddess.testscript.LoginCheckout" />
 	</classes>
-	</test> -->
-
-
+	</test>
+	
 </suite> <!-- Suite -->
