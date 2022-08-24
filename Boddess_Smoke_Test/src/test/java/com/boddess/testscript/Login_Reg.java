@@ -23,6 +23,7 @@ public class Login_Reg extends Reporting {
 		String LoginIconXpathAfterLogin = PropReader.getProp("LoginIconXpathAfterLogin");
 		String ProceedButtonAfterEmail = PropReader.getProp("ProceedButtonAfterEmail");
 		String SignInViaPWD = PropReader.getProp("SignInViaPWD");
+
 		wait(By.xpath(LoginIconXpath));
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
@@ -32,14 +33,18 @@ public class Login_Reg extends Reporting {
 		wait(By.xpath(SignInViaPWD));
 		driver.findElement(By.xpath(SignInViaPWD)).click();
 
-		
-		  wait(By.xpath(PasswordForLogin));
-		  driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
-		  driver.findElement(By.xpath(SubmitLoginButton)).click(); Thread.sleep(6000);
-		  wait(By.xpath(LoginIconXpathAfterLogin));
-		  driver.findElement(By.xpath(LoginIconXpathAfterLogin)).click();
-		  Thread.sleep(10000); 
-		  wait(By.xpath(LogoutXpath));
-		 
+		wait(By.xpath(PasswordForLogin));
+		driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
+		wait(By.xpath(SubmitLoginButton));
+		driver.findElement(By.xpath(SubmitLoginButton)).click();
+		Thread.sleep(6000);
+		wait(By.xpath(LoginIconXpathAfterLogin));
+		driver.findElement(By.xpath(LoginIconXpathAfterLogin)).click();
+		Thread.sleep(10000);
+		wait(By.xpath(LogoutXpath));
+		driver.findElement(By.xpath(LogoutXpath)).click();
+		;
+		Thread.sleep(6000);
+
 	}
 }
