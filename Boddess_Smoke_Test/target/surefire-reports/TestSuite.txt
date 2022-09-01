@@ -1,62 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 21, Errors: 0, Skipped: 0, Time elapsed: 38,741.831 sec <<< FAILURE! - in TestSuite
-cat_Navigation(com.boddess.testscript.Homepage)  Time elapsed: 128.649 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Makeup'] (tried for 120 second(s) with 500 milliseconds interval)
+Tests run: 24, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 261.294 sec <<< FAILURE! - in TestSuite
+Login(com.boddess.testscript.Login_Reg)  Time elapsed: 0.092 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: Element <a href="https://www.boddess.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYm9kZGVzcy5jb20vZnJhZ3JhbmNl/"> is not clickable at point (1200,37) because another element <li class="authorization-link"> obscures it
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.Homepage.cat_Navigation(Homepage.java:151)
-
-Login(com.boddess.testscript.Login_Reg)  Time elapsed: 121.293 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type='text'][@name='username']	 (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.Login_Reg.Login(Login_Reg.java:29)
-
-bread_plp(com.boddess.testscript.PLP)  Time elapsed: 120.254 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Skin'] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PLP.bread_plp(PLP.java:103)
-
-static_plp(com.boddess.testscript.PLP)  Time elapsed: 36,401.154 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Skin'] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PLP.static_plp(PLP.java:131)
-
-prd_name(com.boddess.testscript.PDP)  Time elapsed: 1.324 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.boddess.com/laneige-moist-cream-cleansers-150ml&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.boddess.com.
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13000, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6f9cd898-a465-4b55-8e9f-4948a07de5d3
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -67,227 +19,40 @@ Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:853)
-	at com.boddess.testscript.PDP.PDP_Navigation(PDP.java:29)
-	at com.boddess.testscript.PDP.prd_name(PDP.java:40)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.Login_Reg.Login(Login_Reg.java:28)
 
-qty_addtoCart(com.boddess.testscript.PDP)  Time elapsed: 120.037 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //select[@name='qty']	 (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.qty_addtoCart(PDP.java:65)
-
-social(com.boddess.testscript.PDP)  Time elapsed: 120.453 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='Facebook'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.social(PDP.java:90)
-
-prices_pdp(com.boddess.testscript.PDP)  Time elapsed: 120.095 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@data-role='priceBox']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+static_plp(com.boddess.testscript.PLP)  Time elapsed: 120.565 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id='ui-id-45'] (tried for 120 second(s) with 500 milliseconds interval)
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-*** Element info: {Using=xpath, value=//div[@data-role='priceBox']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.boddess.testscript.PDP.prices_pdp(PDP.java:115)
-
-wish(com.boddess.testscript.PDP)  Time elapsed: 120.037 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()='Add to Wishlist']		 (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.wish(PDP.java:135)
-
-Product_Image(com.boddess.testscript.PDP)  Time elapsed: 120.041 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@id='magnifier-item-0'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.Product_Image(PDP.java:154)
-
-Pincode_Validation(com.boddess.testscript.PDP)  Time elapsed: 120.035 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='pincode_number'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.Pincode_Validation(PDP.java:178)
-
-ProductDetailSection(com.boddess.testscript.PDP)  Time elapsed: 120.035 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='Details']	 (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.ProductDetailSection(PDP.java:209)
-
-breadcrumbs_pdp(com.boddess.testscript.PDP)  Time elapsed: 121.774 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[1]/div[3]/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
-*** Element info: {Using=xpath, value=/html/body/div[1]/div[3]/ul}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at com.boddess.testscript.PDP.breadcrumbs_pdp(PDP.java:242)
-
-Pincode_Validation_correct(com.boddess.testscript.PDP)  Time elapsed: 120.096 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='pincode_number'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.PDP.Pincode_Validation_correct(PDP.java:271)
-
-ContactDetails(com.boddess.testscript.MyAccount)  Time elapsed: 120.051 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text()='Sign In']	 (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.utilities.MyMethods.Login(MyMethods.java:20)
-	at com.boddess.testscript.MyAccount.ContactDetails(MyAccount.java:38)
-
-ChangePassword(com.boddess.testscript.MyAccount)  Time elapsed: 120.043 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id="maincontent"]/div[2]/div[1]/div[4]/div[2]/div[1]/div[2]/a[1]/span (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.MyAccount.ChangePassword(MyAccount.java:85)
-
-Newsletter(com.boddess.testscript.MyAccount)  Time elapsed: 120.033 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='box box-newsletter'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.MyAccount.Newsletter(MyAccount.java:117)
-
-DefaultBillingAddress(com.boddess.testscript.MyAccount)  Time elapsed: 120.029 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='box box-billing-address'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.MyAccount.DefaultBillingAddress(MyAccount.java:145)
-
-DefaultShippingAddress(com.boddess.testscript.MyAccount)  Time elapsed: 120.027 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='box box-shipping-address'] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.MyAccount.DefaultShippingAddress(MyAccount.java:173)
-
-ManageAddressLink(com.boddess.testscript.MyAccount)  Time elapsed: 120.045 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Manage Addresses')] (tried for 120 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.MyAccount.ManageAddressLink(MyAccount.java:201)
-
-Login(com.boddess.testscript.LoginCheckout)  Time elapsed: 142.451 sec  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Proceed'] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 23076, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 86f288fd-9ce2-46a9-9212-dd8baee455b7
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13000, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6f9cd898-a465-4b55-8e9f-4948a07de5d3
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.boddess.utilities.Setup.wait(Setup.java:56)
-	at com.boddess.testscript.LoginCheckout.Login(LoginCheckout.java:51)
+	at com.boddess.utilities.Setup.wait(Setup.java:47)
+	at com.boddess.testscript.PLP.static_plp(PLP.java:134)
+
+PrePaidCheckout(com.boddess.testscript.PrepaidCheckout)  Time elapsed: 29.257 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: Element <span> is not clickable at point (547,419) because another element <div id="checkout-loader" class="loading-mask"> obscures it
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'AYUSH-HOB', ip: '172.17.42.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220808125904, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13000, moz:profile: C:\Users\AYUSH~1.SHA\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6f9cd898-a465-4b55-8e9f-4948a07de5d3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.boddess.testscript.PrepaidCheckout.PrePaidCheckout(PrepaidCheckout.java:57)
 

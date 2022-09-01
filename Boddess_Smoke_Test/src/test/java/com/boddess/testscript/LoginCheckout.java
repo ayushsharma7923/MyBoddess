@@ -52,22 +52,23 @@ public class LoginCheckout extends Reporting {
 		wait(By.xpath(ProceedButtonMiniCart));
 		// clicking on proceed button on mini cart
 		driver.findElement(By.xpath(ProceedButtonMiniCart)).click();
-		Thread.sleep(5000);
+		Thread.sleep(6000);
+		
 
 		// Clicking on next button of Item section
 		wait(By.xpath(NextButtonItemSection));
 		driver.findElement(By.xpath(NextButtonItemSection)).click();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 
 		wait(By.xpath(NextButtonAddressSection));
 		driver.findElement(By.xpath(NextButtonAddressSection)).click();
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 
 		error = "CashOnDelivery";
 		wait(By.xpath(CashOnDelivery));
 		Assert.assertTrue(driver.findElement(By.xpath(CashOnDelivery)).isDisplayed());
 		driver.findElement(By.xpath(CashOnDelivery)).click();
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 
 		wait(By.xpath(SendOTPbutton));
 		driver.findElement(By.xpath(SendOTPbutton)).click();

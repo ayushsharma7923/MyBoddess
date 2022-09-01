@@ -28,7 +28,7 @@ public class Login_Reg extends Reporting {
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
 		driver.findElement(By.xpath(EmailForLogin)).sendKeys("boddesstest@gmail.com");
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath(ProceedButtonAfterEmail)).click();
 		wait(By.xpath(SignInViaPWD));
 		driver.findElement(By.xpath(SignInViaPWD)).click();
