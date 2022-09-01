@@ -32,5 +32,10 @@
 	<class name="com.boddess.testscript.LoginCheckout" />
 	</classes>
 	</test>
+	<test name="PrePaidCheckout">
+	<classes>
+	<class name="com.boddess.testscript.PrepaidCheckout" />
+	</classes>
+	</test>
 	
 </suite> <!-- Suite -->

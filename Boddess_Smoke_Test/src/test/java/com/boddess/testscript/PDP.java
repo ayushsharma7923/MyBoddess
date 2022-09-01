@@ -26,7 +26,7 @@ public class PDP extends Reporting
 	
 	public void PDP_Navigation() throws InterruptedException
 	{
-		driver.navigate().to("https://www.boddess.com/laneige-moist-cream-cleansers-150ml");
+		driver.navigate().to("https://www.boddess.com/garnier-men-acno-fight-anti-pimple-facewash-100ml");
 		
 	}
 	
