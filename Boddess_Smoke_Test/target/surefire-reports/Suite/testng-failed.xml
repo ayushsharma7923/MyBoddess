@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]">
-  <test name="Login_Reg(failed)">
+<suite name="Failed suite [Suite]" verbose="0">
+  <test name="Homepage(failed)">
     <classes>
-      <class name="com.boddess.testscript.Login_Reg">
+      <class name="com.boddess.testscript.Homepage">
         <methods>
-          <include name="Login"/>
+          <include name="cat_Navigation"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.Login_Reg -->
+      </class> <!-- com.boddess.testscript.Homepage -->
       <class name="com.boddess.testscript.PDP">
         <methods>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.PDP -->
-      <class name="com.boddess.testscript.PrepaidCheckout">
-        <methods>
-          <include name="endReport"/>
-          <include name="report"/>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
-      <class name="com.boddess.testscript.MyAccount">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.MyAccount -->
       <class name="com.boddess.testscript.PLP">
         <methods>
           <include name="getResult"/>
@@ -41,20 +24,11 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.LoginCheckout -->
-    </classes>
-  </test> <!-- Login_Reg(failed) -->
-  <test name="PLP(failed)">
-    <classes>
       <class name="com.boddess.testscript.Login_Reg">
         <methods>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
       <class name="com.boddess.testscript.PrepaidCheckout">
         <methods>
           <include name="endReport"/>
@@ -62,18 +36,70 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.PrepaidCheckout -->
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+  <test name="Login_Reg(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
       <class name="com.boddess.testscript.PLP">
         <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
+      <class name="com.boddess.testscript.LoginCheckout">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.LoginCheckout -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="Login"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+      <class name="com.boddess.testscript.PrepaidCheckout">
+        <methods>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- Login_Reg(failed) -->
+  <test name="PLP(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="bread_plp"/>
           <include name="static_plp"/>
           <include name="getResult"/>
         </methods>
@@ -83,38 +109,47 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.LoginCheckout -->
-    </classes>
-  </test> <!-- PLP(failed) -->
-  <test name="PrePaidCheckout(failed)">
-    <classes>
       <class name="com.boddess.testscript.Login_Reg">
         <methods>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.Login_Reg -->
-      <class name="com.boddess.testscript.PDP">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.PDP -->
       <class name="com.boddess.testscript.PrepaidCheckout">
         <methods>
-          <include name="PrePaidCheckout"/>
           <include name="endReport"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.PrepaidCheckout -->
-      <class name="com.boddess.testscript.Homepage">
-        <methods>
-          <include name="getResult"/>
-        </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
       <class name="com.boddess.testscript.MyAccount">
         <methods>
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- PLP(failed) -->
+  <test name="PDP(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="prd_name"/>
+          <include name="Pincode_Validation"/>
+          <include name="ProductDetailSection"/>
+          <include name="Product_Image"/>
+          <include name="Pincode_Validation_correct"/>
+          <include name="social"/>
+          <include name="wish"/>
+          <include name="breadcrumbs_pdp"/>
+          <include name="prices_pdp"/>
+          <include name="qty_addtoCart"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
       <class name="com.boddess.testscript.PLP">
         <methods>
           <include name="getResult"/>
@@ -125,6 +160,154 @@
           <include name="getResult"/>
         </methods>
       </class> <!-- com.boddess.testscript.LoginCheckout -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+      <class name="com.boddess.testscript.PrepaidCheckout">
+        <methods>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- PDP(failed) -->
+  <test name="My Account(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
+      <class name="com.boddess.testscript.LoginCheckout">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.LoginCheckout -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+      <class name="com.boddess.testscript.PrepaidCheckout">
+        <methods>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="ContactDetails"/>
+          <include name="ChangePassword"/>
+          <include name="Newsletter"/>
+          <include name="DefaultBillingAddress"/>
+          <include name="DefaultShippingAddress"/>
+          <include name="ManageAddressLink"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- My Account(failed) -->
+  <test name="LoginCheckout(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
+      <class name="com.boddess.testscript.LoginCheckout">
+        <methods>
+          <include name="Login"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.LoginCheckout -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+      <class name="com.boddess.testscript.PrepaidCheckout">
+        <methods>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
+    </classes>
+  </test> <!-- LoginCheckout(failed) -->
+  <test name="PrePaidCheckout(failed)">
+    <classes>
+      <class name="com.boddess.testscript.Homepage">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Homepage -->
+      <class name="com.boddess.testscript.PDP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PDP -->
+      <class name="com.boddess.testscript.PLP">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PLP -->
+      <class name="com.boddess.testscript.LoginCheckout">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.LoginCheckout -->
+      <class name="com.boddess.testscript.Login_Reg">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.Login_Reg -->
+      <class name="com.boddess.testscript.PrepaidCheckout">
+        <methods>
+          <include name="PrePaidCheckout"/>
+          <include name="endReport"/>
+          <include name="report"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.PrepaidCheckout -->
+      <class name="com.boddess.testscript.MyAccount">
+        <methods>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.boddess.testscript.MyAccount -->
     </classes>
   </test> <!-- PrePaidCheckout(failed) -->
 </suite> <!-- Failed suite [Suite] -->
