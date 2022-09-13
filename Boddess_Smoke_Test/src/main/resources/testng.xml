@@ -32,7 +32,7 @@
 	<class name="com.boddess.testscript.LoginCheckout" />
 	</classes>
 	</test>
-	<test name="PrePaidCheckout">
+	<test name="PrepaidCheckout">
 	<classes>
 	<class name="com.boddess.testscript.PrepaidCheckout" />
 	</classes>
