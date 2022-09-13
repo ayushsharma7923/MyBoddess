@@ -3,14 +3,14 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.boddess.testscript.Homepage">
+      <class name="com.boddess.testscript.Login_Reg">
         <methods>
           <include name="endReport"/>
-          <include name="Searchbox"/>
+          <include name="Login"/>
           <include name="report"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.boddess.testscript.Homepage -->
+      </class> <!-- com.boddess.testscript.Login_Reg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

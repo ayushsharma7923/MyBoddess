@@ -5,8 +5,9 @@ import org.openqa.selenium.By;
 import com.boddess.reporting.Reporting;
 import com.boddess.testscript.PropReader;
 
-public class MyMethods extends Reporting {
+public class MyMethods extends Reporting{
 
+	
 	public void Login() throws InterruptedException {
 		String LoginIconXpath = PropReader.getProp("LoginIconXpath");
 		String EmailForLogin = PropReader.getProp("EmailForLogin");
@@ -14,7 +15,8 @@ public class MyMethods extends Reporting {
 		String SubmitLoginButton = PropReader.getProp("SubmitLoginButton");
 		String ProceedButtonAfterEmail = PropReader.getProp("ProceedButtonAfterEmail");
 		String SignInViaPWD = PropReader.getProp("SignInViaPWD");
-
+		
+		
 		wait(By.xpath(LoginIconXpath));
 		driver.findElement(By.xpath(LoginIconXpath)).click();
 		wait(By.xpath(EmailForLogin));
@@ -24,11 +26,12 @@ public class MyMethods extends Reporting {
 		wait(By.xpath(SignInViaPWD));
 		driver.findElement(By.xpath(SignInViaPWD)).click();
 
-		wait(By.xpath(PasswordForLogin));
-		driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
-		driver.findElement(By.xpath(SubmitLoginButton)).click();
-		Thread.sleep(6000);
-
+		
+		  wait(By.xpath(PasswordForLogin));
+		  driver.findElement(By.xpath(PasswordForLogin)).sendKeys("Password@123");
+		  driver.findElement(By.xpath(SubmitLoginButton)).click(); Thread.sleep(6000);
+		  
 	}
-
+	
+	
 }
