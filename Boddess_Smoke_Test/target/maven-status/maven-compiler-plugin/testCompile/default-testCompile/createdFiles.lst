@@ -9,7 +9,6 @@ com\boddess\testscript\TestClass.class
 com\boddess\testscript\PDP.class
 com\boddess\testscript\MyAccount.class
 com\boddess\testscript\Homepage.class
-com\boddess\testscript\PrepaidCheckout.class
 com\boddess\utilities\Setup.class
 com\boddess\testscript\Checkout.class
 com\boddess\testscript\LoginCheckout.class
