@@ -81,7 +81,7 @@ public class Reporting extends Setup {
 	{
 	Properties obj = new Properties();
 	FileInputStream objFile;
-	objFile = new FileInputStream(System.getProperty("user.dir")+"./solveda.configuration.properties");
+	objFile = new FileInputStream(System.getProperty("user.dir")+"/solveda.configuration.properties");
 	obj.load(objFile);
 	String out = obj.getProperty(in);
 	return out;
