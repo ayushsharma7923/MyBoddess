@@ -22,7 +22,7 @@ public class Setup {
 		 * driver = new ChromeDriver();
 		 */
 
-		System.setProperty("webdriver.gecko.driver", "/Inputs/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "Inputs/geckodriver.exe");
 		driver = new FirefoxDriver();
 
 		driver.manage().window().maximize();
