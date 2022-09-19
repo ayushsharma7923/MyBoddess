@@ -6,7 +6,7 @@
   <artifactId>OB</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
-		<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+		<suiteXmlFile>Boddess_Smoke_Test/src/main/resources/testng.xml</suiteXmlFile>
 	</properties>
 	<dependencies>
 	
