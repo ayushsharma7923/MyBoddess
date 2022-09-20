@@ -18,7 +18,7 @@ public class Setup {
 	public void Start() {
 
 		
-		  System.setProperty("webdriver.chrome.driver", "./Inputs/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "Inputs/chromedriver.exe");
 		  driver = new ChromeDriver();
 		 
 
